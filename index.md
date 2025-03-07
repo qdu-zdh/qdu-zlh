@@ -49,7 +49,9 @@ Hola, amigos de todo el mundo.
 《自动化学科导论》，副主编，待出版
 
 ### 英文期刊
-Chen Yangzhou，Zhao lanhao. Partial state consensus and output consensus in heterogeneous multi-agent systems. UR
+Chen Yangzhou，Zhao lanhao. Consensus of heterogeneous multi-agent systems: linear transformation decentralized output feedback method. D
+
+Chen Yangzhou，Zhao lanhao. Partial state consensus and output consensus in heterogeneous multi-agent systems. R
 
 Zhao lanhao, Ji Zhijian, Liu Yungang, Lin Chong. Controllability of General Linear Discrete Multiagent Systems with Directed and Weighted Signed Network. J Syst Sci Complex (2022). （SCI期刊，国内系统科学领域权威期刊，JCR Q1）
 
@@ -155,6 +157,9 @@ https://doi.org/10.48550/arXiv.2204.00995
 
 异构多智能体系统的分散化设计 北京市自然科学基金面上项目 项目编号：4232041，参与
 
+基于一致性理论的智能交通车队换道、分裂和融合实现 
+
+基于一致性理论的轨道交通列车群虚拟编组协同控制
 
 ## 科普
 
