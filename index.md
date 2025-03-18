@@ -100,7 +100,7 @@ https://doi.org/10.48550/arXiv.2204.00995
 
 ## 社会服务
 
-### 期刊审稿
+### 期刊审稿 （独立）
 
 Transactions of the Institute of Measurement and Control
 
@@ -108,7 +108,7 @@ Journal of Control and Decision
 
 Franklin Open
 
-### 会议审稿
+### 会议审稿 （独立）
 
 智能自动化与系统安全国际会议
 
