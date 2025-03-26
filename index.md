@@ -53,17 +53,17 @@ Chen Yangzhou，Zhao lanhao. Consensus of heterogeneous multi-agent systems: lin
 
 Chen Yangzhou，Zhao lanhao. Partial state consensus and output consensus in heterogeneous multi-agent systems. R
 
-Zhao lanhao, Ji Zhijian, Liu Yungang, Lin Chong. Controllability of General Linear Discrete Multiagent Systems with Directed and Weighted Signed Network. J Syst Sci Complex (2022). （SCI期刊，国内系统科学领域权威期刊，JCR Q1）
+Zhao lanhao, Ji Zhijian, Liu Yungang, Lin Chong. Controllability of General Linear Discrete Multiagent Systems with Directed and Weighted Signed Network. J Syst Sci Complex (2022). （SCI期刊，JCR Q1，中国科协高质量科技期刊分级目录数学领域T2期刊，卓越期刊行动计划中文梯队期刊）
 
 ### EI 会议
 
 [1]Zhao lanhao，Chen Yangzhou. Decentralized design of leader-following consensus protocols for heterogeneous multiagent systems with asymmetric weight matrix. CISC.2024 
 
-[2]Chen Yangzhou, Zhao lanhao. Decentralized design of consensus protocols with minimal communication links based on directed spanning tree.CCDC 2023. 
+[2]Chen Yangzhou, Zhao lanhao. Decentralized design of consensus protocols with minimal communication links based on directed spanning tree.CCDC 2023. （中国自动化学会推荐 A类 会议）
 
 ### 中文核心期刊
 
-[1]赵兰浩,纪志坚.符号网络条件下扩散耦合多智能体系统的可控性分析[J].系统科学与数学,2021,41(06):1455-1466. （卓越期刊行动计划梯队期刊，中文核心期刊）
+[1]赵兰浩,纪志坚.符号网络条件下扩散耦合多智能体系统的可控性分析[J].系统科学与数学,2021,41(06):1455-1466. （中国科协高质量科技期刊分级目录数学领域T3期刊、管理科学领域中文T2期刊，卓越期刊行动计划中文梯队期刊，中文核心期刊）
 
 ### 中文其他刊物
 
@@ -133,7 +133,6 @@ Franklin Open
 知乎/中国科学报 首届“知乎科技榜” 评审委员
 
 第一届，第二届自动化领域青年学生交流会 组织工作人员
-
 
 
 ## 荣誉
