@@ -49,7 +49,9 @@ Hola, amigos de todo el mundo.
 《自动化学科导论》，副主编，待出版
 
 ### 英文期刊
-Chen Yangzhou，Zhao lanhao. Consensus of heterogeneous multi-agent systems: linear transformation decentralized output feedback method. D
+Zhao lanhao, Chen Yangzhou. Consensus in linear heterogeneous multi-agent systems: A partial variable approach based on dynamic output feedback. D
+
+Chen Yangzhou，Zhao lanhao. Consensus of heterogeneous multi-agent systems: linear transformation decentralized output feedback method. UR
 
 Chen Yangzhou，Zhao lanhao. Partial state consensus and output consensus in heterogeneous multi-agent systems. R
 
