@@ -53,7 +53,7 @@ Zhao lanhao, Chen Yangzhou. Consensus in linear heterogeneous multi-agent system
 
 Chen Yangzhou，Zhao lanhao. Consensus of heterogeneous multi-agent systems: linear transformation decentralized output feedback method. UR
 
-Chen Yangzhou，Zhao lanhao. Partial state consensus and output consensus in heterogeneous multi-agent systems. R
+Chen Yangzhou，Zhao lanhao. Partial state consensus and output consensus in heterogeneous multi-agent systems.  J Syst Sci Complex (2025). （SCI期刊，JCR Q1，中国科协高质量科技期刊分级目录数学领域T2期刊，卓越期刊行动计划英文梯队期刊）
 
 Zhao lanhao, Ji Zhijian, Liu Yungang, Lin Chong. Controllability of General Linear Discrete Multiagent Systems with Directed and Weighted Signed Network. J Syst Sci Complex (2022). （SCI期刊，JCR Q1，中国科协高质量科技期刊分级目录数学领域T2期刊，卓越期刊行动计划英文梯队期刊）
 
@@ -229,12 +229,6 @@ Franklin Open
 ### 搞几个证书玩玩
 
 阿比德大学 地球科学 荣誉博士、普林斯顿教会大学 人类学 荣誉博士、欧洲开放大学 工商管理硕士、欧洲开放大学 控制工程、NASA系统工程 证书、中国旅游专家（中国文化中心颁发）、秘鲁旅游专家（秘鲁旅游局颁发）、波兰旅游专家（波兰旅游局北京办事处颁发）、泰国旅游大师（泰国国家旅游局成都办事处颁发）、玩美专家（美国国家旅游局颁发）
-
-### 学术师承谱系 （神奇的复杂网络）
-
-梦幻联动
-
-![谱系](/mmexport1730533964349.jpg)
 
 
 ## 业余爱好
