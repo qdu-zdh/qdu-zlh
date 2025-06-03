@@ -49,15 +49,15 @@ Hola, amigos de todo el mundo.
 《自动化学科导论》，副主编，待出版
 
 ### 英文期刊
-Zhao lanhao, Chen Yangzhou. Finite time and fixed time consensus in linear heterogeneous multi-agent systems: A partial variable approach. D
+[1]Zhao lanhao, Chen Yangzhou. Finite time and fixed time consensus in linear heterogeneous multi-agent systems: A partial variable approach. D
 
-Zhao lanhao, Chen Yangzhou. Consensus in linear heterogeneous multi-agent systems: A partial variable approach based on dynamic output feedback. D
+[2]Zhao lanhao, Chen Yangzhou. Consensus in linear heterogeneous multi-agent systems: A partial variable approach based on dynamic output feedback. D
 
-Chen Yangzhou，Zhao lanhao. Consensus of heterogeneous multi-agent systems: linear transformation decentralized output feedback method. UR
+[3]Chen Yangzhou，Zhao lanhao. Consensus of heterogeneous multi-agent systems: linear transformation decentralized output feedback method. UR
 
-Chen Yangzhou，Zhao lanhao. Partial state consensus and output consensus in heterogeneous multi-agent systems.  J Syst Sci Complex (2025). （SCI期刊，JCR Q1，中国科协高质量科技期刊分级目录数学领域T2期刊，卓越期刊行动计划英文梯队期刊）
+[4]Chen Yangzhou，Zhao lanhao. Partial state consensus and output consensus in heterogeneous multi-agent systems.  J Syst Sci Complex (2025). （SCI期刊，JCR Q1，中国科协高质量科技期刊分级目录数学领域T2期刊，卓越期刊行动计划英文梯队期刊）
 
-Zhao lanhao, Ji Zhijian, Liu Yungang, Lin Chong. Controllability of General Linear Discrete Multiagent Systems with Directed and Weighted Signed Network. J Syst Sci Complex (2022). （SCI期刊，JCR Q1，中国科协高质量科技期刊分级目录数学领域T2期刊，卓越期刊行动计划英文梯队期刊）
+[5]Zhao lanhao, Ji Zhijian, Liu Yungang, Lin Chong. Controllability of General Linear Discrete Multiagent Systems with Directed and Weighted Signed Network. J Syst Sci Complex (2022). （SCI期刊，JCR Q1，中国科协高质量科技期刊分级目录数学领域T2期刊，卓越期刊行动计划英文梯队期刊）
 
 ### EI 会议
 
