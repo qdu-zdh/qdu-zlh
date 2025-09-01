@@ -49,9 +49,9 @@ Hola, amigos de todo el mundo.
 《自动化学科导论》，副主编，待出版
 
 ### 英文期刊
-[1]Zhao lanhao, Chen Yangzhou. Finite time and fixed time consensus in linear heterogeneous multi-agent systems: A partial variable approach. D
+[1]Zhao lanhao, Chen Yangzhou. Consensus in linear heterogeneous multi-agent systems: A partial variable approach based on dynamic output feedback. D
 
-[2]Zhao lanhao, Chen Yangzhou. Consensus in linear heterogeneous multi-agent systems: A partial variable approach based on dynamic output feedback. D
+[2]Guangxin Guo, Lanhao Zhao, Shaoqiu Xiao et al. Barrier function-based Preset-Time Bipartite Consensus for  Nonlinear Multi-agent Systems under Disturbance: A Time-Varying Function Approach. UR
 
 [3]Chen Yangzhou，Zhao lanhao. Consensus of heterogeneous multi-agent systems: linear transformation decentralized output feedback method. UR
 
