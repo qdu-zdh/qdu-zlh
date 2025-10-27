@@ -49,19 +49,13 @@ Hola, amigos de todo el mundo.
 《自动化学科导论》，副主编，待出版
 
 ### 英文期刊
-[1]Zhao lanhao, Chen Yangzhou. Partial state consensus for a class of leaderless nonlinear heterogeneous multi-agent systems. D
+[1]Chen Yangzhou，Zhao lanhao et al. Consensus of heterogeneous multi-agent systems: linear transformation decentralized output feedback method. UR
 
-[2]Zhao lanhao, Chen Yangzhou. Consensus in linear heterogeneous multi-agent systems: A partial variable approach based on dynamic output feedback. D
+[2]Chen Yangzhou，Zhao lanhao. Partial state consensus and output consensus in heterogeneous multi-agent systems.  J Syst Sci Complex (2025). （SCI期刊，JCR Q1，中国科协高质量科技期刊分级目录数学领域T2期刊，卓越期刊行动计划英文梯队期刊）
 
-[3]Chen Yangzhou，Zhao lanhao et al. Consensus of heterogeneous multi-agent systems: linear transformation decentralized output feedback method. UR
+[3]Zhao lanhao, Ji Zhijian, Liu Yungang, Lin Chong. Controllability of General Linear Discrete Multiagent Systems with Directed and Weighted Signed Network. J Syst Sci Complex (2022). （SCI期刊，JCR Q1，中国科协高质量科技期刊分级目录数学领域T2期刊，卓越期刊行动计划英文梯队期刊）
 
-[4]Chen Yangzhou，Zhao lanhao. Partial state consensus and output consensus in heterogeneous multi-agent systems.  J Syst Sci Complex (2025). （SCI期刊，JCR Q1，中国科协高质量科技期刊分级目录数学领域T2期刊，卓越期刊行动计划英文梯队期刊）
-
-[5]Zhao lanhao, Ji Zhijian, Liu Yungang, Lin Chong. Controllability of General Linear Discrete Multiagent Systems with Directed and Weighted Signed Network. J Syst Sci Complex (2022). （SCI期刊，JCR Q1，中国科协高质量科技期刊分级目录数学领域T2期刊，卓越期刊行动计划英文梯队期刊）
-
-[6]Guangxin Guo, Lanhao Zhao, Shaoqiu Xiao et al. Barrier function-based Preset-Time Bipartite Consensus for  Nonlinear Multi-agent Systems under Disturbance: A Time-Varying Function Approach. UR
-
-[7]Guangxin Guo, Lanhao Zhao, et al. Adaptive Super-Twisting Bipartite Consensus of Multiple Underwater Vehicles： A Barrier Function and Event-triggered Hybrid Approach. D
+[4]Guangxin Guo, Lanhao Zhao, Shaoqiu Xiao et al. Barrier function-based Preset-Time Bipartite Consensus for  Nonlinear Multi-agent Systems under Disturbance: A Time-Varying Function Approach. UR
 
 ### EI 会议
 
@@ -113,6 +107,8 @@ https://doi.org/10.48550/arXiv.2204.00995
 IEEE Transactions on Control Systems Technology 
 
 Transactions of the Institute of Measurement and Control
+
+Frontiers in Mechanical Engineering
 
 Journal of Control and Decision
 
