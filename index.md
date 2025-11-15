@@ -34,7 +34,7 @@ Hola, amigos de todo el mundo.
 
 2、集体动力学演进和调控
 
-3、机器学习方法及其在机器人、控制系统中的应用
+3、机器学习方法及其控制系统中的应用
 
 ## 出版物
 
@@ -50,6 +50,9 @@ Hola, amigos de todo el mundo.
 [3]Zhao lanhao, Ji Zhijian, Liu Yungang, Lin Chong. Controllability of General Linear Discrete Multiagent Systems with Directed and Weighted Signed Network. J Syst Sci Complex (2022). （SCI期刊，JCR Q1，中国科协高质量科技期刊分级目录数学领域T2期刊，卓越期刊行动计划英文梯队期刊）
 
 [4]Guangxin Guo, Lanhao Zhao, Shaoqiu Xiao et al. Barrier function-based Preset-Time Bipartite Consensus for  Nonlinear Multi-agent Systems under Disturbance: A Time-Varying Function Approach. UR
+
+[5]Guangxin Guo, Lanhao Zhao. Event-Triggered  Bipartite Consensus for Multiple AUVs under Safety Constraints and Disturbances: Adaptive Super-Twisting  with Barrier Functions.UR
+
 
 ### EI 会议
 
@@ -252,7 +255,6 @@ Franklin Open
 列一个书单：
 
 ![阅读](/Screenshot_20241102_011053_cn_wps_moffice_eng_PDFReader1.jpg)
-
 
 
 ### 诗词创作
