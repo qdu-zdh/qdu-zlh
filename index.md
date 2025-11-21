@@ -99,6 +99,10 @@ https://doi.org/10.48550/arXiv.2204.00995
 
 ## 社会服务
 
+### 期刊编辑（独立）
+
+Aerospace Engineering Communications
+
 ### 期刊审稿 （独立）
 
 IEEE Transactions on Control Systems Technology
