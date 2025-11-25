@@ -14,7 +14,7 @@ Hola, amigos de todo el mundo.
 
 ![联系](/Screenshot_20241102_004204_com_android_chrome_ChromeTabbedActivity.jpg)
 
-
+在复杂的群体行为中寻找逻辑， 在晦涩的控制理论里搭建桥梁， 在千年的文明遗迹间丈量岁月， 在多彩的数字花园里重构自我。
 
 ## 赵兰浩
 
