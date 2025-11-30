@@ -1,6 +1,7 @@
-![联系](/Screenshot_20241102_004204_com_android_chrome_ChromeTabbedActivity.jpg)
 
-在复杂的群体行为中寻找逻辑， 在晦涩的控制理论里搭建桥梁， 在千年的文明遗迹间丈量岁月， 在多彩的数字花园里重构自我。
+欢迎光临我的数字花园。 这里不仅有冰冷的数学模型，也有关于历史、游戏与诗歌的温度。
+
+![联系](/Screenshot_20241102_004204_com_android_chrome_ChromeTabbedActivity.jpg)
 
 ## 赵兰浩
 
