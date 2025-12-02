@@ -92,9 +92,9 @@ Aerospace Engineering Communications
 
 ### 期刊审稿人
 
-IEEE Transactions on Control Systems Technology
+IEEE Transactions on Control Systems Technology 
 
-IEEE Transactions on Automation Science and Engineering
+IEEE Transactions on Automation Science and Engineering 
 
 Transactions of the Institute of Measurement and Control
 
