@@ -268,7 +268,7 @@ Franklin Open
 ![阅读](/Screenshot_20241102_011053_cn_wps_moffice_eng_PDFReader1.jpg)
 
 
-### 现代诗？不会写嗷
+### 少年不知愁滋味，为赋新词强说愁
 
 读史有感(一) 
 
