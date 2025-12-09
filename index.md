@@ -86,48 +86,7 @@ https://doi.org/10.48550/arXiv.2204.00995
 
 ## 社会服务
 
-### 期刊编辑
-
-Aerospace Engineering Communications
-
-### 期刊审稿人
-
-IEEE Transactions on Control Systems Technology 
-
-IEEE Transactions on Automation Science and Engineering 
-
-Transactions of the Institute of Measurement and Control
-
-Frontiers in Mechanical Engineering
-
-Journal of Control and Decision
-
-Franklin Open
-
-### 会议审稿人
-
-智能自动化与系统安全国际会议
-
-自主无人系统国际会议
-
-中国自动化大会
-
-中国控制与决策会议
-
-### 其他社会兼职
-
-中国自动化学会重要学术会议目录评审专家
-
-中国自动化学会“智向未来”人工智能与自动化科普专家 (-2024)
-
-中国自动化学会第十届普及工作委员会委员
-
-科普中国-中国自动化学会所属科普信息员
-
-知乎/中国科学报 首届“知乎科技榜” 评审委员
-
-第一届，第二届自动化领域青年学生交流会 组织工作人员
-
+在期刊方面，我目前是《Aerospace Engineering Communications》的期刊编辑。同时，受邀担任多个知名学术期刊的审稿人，包括 IEEE Transactions on Control Systems Technology、IEEE Transactions on Automation Science and Engineering、Transactions of the Institute of Measurement and Control、Frontiers in Mechanical Engineering、Journal of Control and Decision 以及 Franklin Open等。同时，担任智能自动化与系统安全国际会议、自主无人系统国际会议、中国自动化大会和中国控制与决策会议的审稿人。此外，积极投身于学会工作和科普活动。担任中国自动化学会重要学术会议目录评审专家，并曾任中国自动化学会智向未来人工智能与自动化科普专家，现任中国自动化学会第十届普及工作委员会委员、科普中国-中国自动化学会所属科普信息员。曾担任知乎/中国科学报首届知乎科技榜评审委员，并作为组织工作人员参与了第一届和第二届自动化领域青年学生交流会。
 
 ## 荣誉
 
