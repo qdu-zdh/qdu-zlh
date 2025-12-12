@@ -144,6 +144,8 @@ Franklin Open
 
 亚马逊通技术服务（北京）有限公司
 
+Monolithic Power Systems, Inc. (MPS) 
+
 上海小度技术有限公司
 
 杭州动澄信息技术有限公司（阿里千问）
