@@ -1,4 +1,4 @@
-
+g
 欢迎光临我的数字花园。 这里不仅有冰冷的数学模型，也有关于历史、游戏与诗歌的温度。
 
 ![联系](/Screenshot_20241102_004204_com_android_chrome_ChromeTabbedActivity.jpg)
@@ -97,6 +97,8 @@ IEEE Transactions on Control Systems Technology
 IEEE Transactions on Automation Science and Engineering
 
 Transactions of the Institute of Measurement and Control
+
+Scientific Reports
 
 Frontiers in Mechanical Engineering
 
