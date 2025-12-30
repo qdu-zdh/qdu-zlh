@@ -88,17 +88,17 @@ https://doi.org/10.48550/arXiv.2204.00995
 
 ### 期刊编辑
 
-Aerospace Engineering Communications
+Aerospace Engineering Communications 
 
 ### 期刊审稿人
 
-IEEE Transactions on Control Systems Technology
+IEEE Transactions on Control Systems Technology 【控制工程领域顶刊】
 
-IEEE Transactions on Automation Science and Engineering
+IEEE Transactions on Automation Science and Engineering 【控制工程领域顶刊】
 
 Transactions of the Institute of Measurement and Control
 
-Scientific Reports
+Scientific Reports 
 
 Frontiers in Mechanical Engineering
 
@@ -144,34 +144,30 @@ Franklin Open
 
 ## 合作企业
 
-亚马逊通技术服务（北京）有限公司
+上海小度技术有限公司 【中国】
 
-Monolithic Power Systems, Inc. (MPS) 
+杭州动澄信息技术有限公司（阿里千问）【中国】
 
-上海小度技术有限公司
+清华大学出版社 【中国】
 
-杭州动澄信息技术有限公司（阿里千问）
+亚马逊通技术服务（北京）有限公司 【美国】
 
-卡西欧（中国）贸易有限公司
+芯源系统有限公司 Monolithic Power Systems, Inc. (MPS) 【美国】
 
-清华大学出版社
+卡西欧（中国）贸易有限公司 【日本】
 
-图瓦斯（上海）安全系统有限公司
+日东电工株式会社 【日本】
 
-芬发自动化（上海）有限公司
+图瓦斯（上海）安全系统有限公司 【瑞典】
+
+芬发自动化（上海）有限公司 【芬兰】
 
 
 ## 太枯燥了？来点好玩的！
 
 ### 搞几个证书玩玩，认真评价含金量你就输了
 
-阿比德大学 地球科学 荣誉博士、
-
-普林斯顿教会大学 人类学 荣誉博士、
-
 欧洲开放大学 工商管理硕士、
-
-欧洲开放大学 控制工程、NASA系统工程 证书、
 
 中国旅游专家（中国文化中心颁发）、
 
@@ -186,7 +182,7 @@ Monolithic Power Systems, Inc. (MPS)
 
 ### 没观过世界，哪来的世界观？
 
-旅行足迹主要在山东、河南、安徽、江苏、浙江、北京、河北、四川等地，除了游玩知名景点（不再罗列）外，还进行了一些历史遗迹踏查项目。
+足迹主要在山东、河南、安徽、江苏、浙江、北京、河北、四川等地，除了游玩知名景点（不再罗列）外，还进行了一些历史遗迹踏查项目。
 
 河南开封地区城墙遗迹踏查、
 
