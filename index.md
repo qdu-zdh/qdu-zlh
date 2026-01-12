@@ -1,4 +1,4 @@
-g
+
 欢迎光临我的数字花园。 这里不仅有冰冷的数学模型，也有关于历史、游戏与诗歌的温度。
 
 ![联系](/Screenshot_20241102_004204_com_android_chrome_ChromeTabbedActivity.jpg)
@@ -36,9 +36,9 @@ g
 
 [3]Zhao lanhao, Ji Zhijian, Liu Yungang, Lin Chong. Controllability of General Linear Discrete Multiagent Systems with Directed and Weighted Signed Network. J Syst Sci Complex (2022). （SCI期刊，JCR Q1，中国科协高质量科技期刊分级目录数学领域T2期刊，卓越期刊行动计划英文梯队期刊）
 
-[4]Guangxin Guo, Lanhao Zhao, Shaoqiu Xiao et al. Barrier function-based Preset-Time Bipartite Consensus for  Nonlinear Multi-agent Systems under Disturbance: A Time-Varying Function Approach. UR
+[4]Guangxin Guo, Lanhao Zhao, Shaoqiu Xiao et al. Barrier function-based Preset-Time Bipartite Consensus for  Nonlinear Multi-agent Systems under Disturbance: A Time-Varying Function Approach. ISA TRANS. Submitted.
 
-[5]Guangxin Guo, Lanhao Zhao. Event-Triggered  Bipartite Consensus for Multiple AUVs under Safety Constraints and Disturbances: Adaptive Super-Twisting  with Barrier Functions.UR
+[5]Guangxin Guo, Lanhao Zhao. Event-Triggered  Bipartite Consensus for Multiple AUVs under Safety Constraints and Disturbances: Adaptive Super-Twisting  with Barrier Functions. Defence Tech. Submitted.
 
 
 ### EI 会议
