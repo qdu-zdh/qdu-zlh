@@ -102,6 +102,8 @@ IEEE Transactions on Control Systems Technology 【控制工程领域顶刊】
 
 IEEE Transactions on Automation Science and Engineering 【控制工程领域顶刊】
 
+IEEE Transactions on Multimedia 【计算机科学领域顶刊】
+
 Transactions of the Institute of Measurement and Control
 
 Scientific Reports 
