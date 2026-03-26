@@ -106,21 +106,21 @@ IEEE Transactions on Multimedia 【计算机科学领域顶刊】
 
 Transactions of the Institute of Measurement and Control
 
-Scientific Reports 
+Journal of Control and Decision 
+
+Scientific Reports
 
 Frontiers in Mechanical Engineering
-
-Journal of Control and Decision 
 
 Franklin Open
 
 ### 会议审稿人
 
+IEEE 自动化科学与工程国际会议
+
 智能自动化与系统安全国际会议
 
 自主无人系统国际会议
-
-IEEE 自动化科学与工程国际会议
 
 中国自动化大会
 
