@@ -30,15 +30,15 @@
 《自动化学科导论》，副主编，待出版
 
 ### 英文期刊
-[1]Chen Yangzhou，Zhao lanhao et al. Consensus of heterogeneous multi-agent systems: linear transformation decentralized output feedback method. Automatica. Major Revision.
+[1]Chen Yangzhou，Zhao lanhao. Partial state consensus and output consensus in heterogeneous multi-agent systems.  J Syst Sci Complex (2025). （SCI期刊，JCR Q1，中国科协高质量科技期刊分级目录数学领域T2期刊，卓越期刊行动计划英文梯队期刊）
 
-[2]Chen Yangzhou，Zhao lanhao. Partial state consensus and output consensus in heterogeneous multi-agent systems.  J Syst Sci Complex (2025). （SCI期刊，JCR Q1，中国科协高质量科技期刊分级目录数学领域T2期刊，卓越期刊行动计划英文梯队期刊）
+[2]Zhao lanhao, Ji Zhijian, Liu Yungang, Lin Chong. Controllability of General Linear Discrete Multiagent Systems with Directed and Weighted Signed Network. J Syst Sci Complex (2022). （SCI期刊，JCR Q1，中国科协高质量科技期刊分级目录数学领域T2期刊，卓越期刊行动计划英文梯队期刊）
 
-[3]Chen Yangzhou，Zhao lanhao. Consensus of heterogeneous multi agent systems: A method based on basic edge state feedback and overlapping decomposition.  
+[3]Chen Yangzhou，Zhao lanhao et al. Consensus of heterogeneous multi-agent systems: linear transformation decentralized output feedback method. Automatica. Major Revision.
 
-[4]Zhao lanhao, Chen Yangzhou.  Partial state consensus and output consensus in heterogeneous multi-agent systems: A method based on DETC.  
+[4]Chen Yangzhou，Zhao lanhao. Consensus of heterogeneous multi agent systems: A method based on basic edge state feedback and overlapping decomposition.  
 
-[5]Zhao lanhao, Ji Zhijian, Liu Yungang, Lin Chong. Controllability of General Linear Discrete Multiagent Systems with Directed and Weighted Signed Network. J Syst Sci Complex (2022). （SCI期刊，JCR Q1，中国科协高质量科技期刊分级目录数学领域T2期刊，卓越期刊行动计划英文梯队期刊）
+[5]Zhao lanhao, Chen Yangzhou.  Partial state consensus and output consensus in heterogeneous multi-agent systems: A method based on DETC.  
 
 [6]Guangxin Guo, Lanhao Zhao, Shaoqiu Xiao et al. Barrier function-based Preset-Time Bipartite Consensus for  Nonlinear Multi-agent Systems under Disturbance: A Time-Varying Function Approach. Submitted.
 
@@ -56,6 +56,8 @@
 ### 中文核心期刊
 
 [1]赵兰浩,纪志坚.符号网络条件下扩散耦合多智能体系统的可控性分析[J].系统科学与数学,2021,41(06):1455-1466. （中国科协高质量科技期刊分级目录数学领域T3期刊、管理科学领域中文T2期刊，卓越期刊行动计划中文梯队期刊，中文核心期刊）
+
+[2]赵涛涛，赵兰浩，纪志坚等.基于分层博弈的二阶多智能体系统分组编队[J]. 在审
 
 ### 中文其他刊物
 
