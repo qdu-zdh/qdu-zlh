@@ -84,7 +84,7 @@
 [11]赵兰浩,董鑫,孙晔.基于串级控制的密码锁安全性优化[J].电子世界,2017(05):94+96./感谢泰安市政府大学生科技创新行动计划对本论文的资助
 
 
-### 预印本
+### 仅预印
 
 [1]Zhao lanhao. Estimation of Strong Structural Controllable Subspace of Network: Equitable Partition Method.
 https://doi.org/10.48550/arXiv.2204.11483 
