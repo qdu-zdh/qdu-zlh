@@ -108,11 +108,11 @@ IEEE Transactions on Automation Science and Engineering 【控制工程领域顶
 
 IEEE Transactions on Multimedia 【计算机科学领域顶刊】
 
-Transactions of the Institute of Measurement and Control
-
 Journal of Control and Decision 
 
 Scientific Reports
+
+Transactions of the Institute of Measurement and Control
 
 Frontiers in Mechanical Engineering
 
@@ -177,10 +177,6 @@ IEEE 自动化科学与工程国际会议
 高性能协同控制核心理论与关键技术 国家自然科学基金重点资助项目，项目编号：62033007，参与
 
 异构多智能体系统的分散化设计 北京市自然科学基金面上项目 项目编号：4232041，参与
-
-基于一致性理论的智能交通车队换道、分裂和融合实现， 实验室项目，参与 
-
-基于一致性理论的重载列车群虚拟编组协同控制技术实现，实验室项目，参与
 
 ## 合作企业
 
