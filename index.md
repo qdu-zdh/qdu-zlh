@@ -92,6 +92,8 @@ https://doi.org/10.48550/arXiv.2204.11483
 [2]Zhao lanhao, Ji Zhijian, Liu Yungang, Lin Chong. Controllability and observability of linear multi-agent systems over matrix-weighted signed networks.
 https://doi.org/10.48550/arXiv.2204.00995 
 
+[3]Zhao lanhao. Machine Learning for Lyapunov Function Synthesis: From Verification to Discovery. RG. DOI: 10.13140/RG.2.2.13442.44482
+
 ## 社会服务
 
 ### 期刊编辑
