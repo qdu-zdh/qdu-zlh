@@ -17,82 +17,86 @@
 
 ## 研究兴趣
 
-1、多智能体系统分析与控制
+1. 复杂网络性能分析方法
+2. 多智能体系统控制基本理论及其应用
+3. 生物群体动力学演进和博弈调控方法
+4. 机器学习方法在构造显式控制律、显式李雅普诺夫函数等方面的应用
 
-2、生物群体动力学演进和调控方法
+## 出版物 (按研究方向分类)
 
-3、机器学习方法在构造显式控制律、显式李雅普诺夫函数等方面的应用
+### 方向一：复杂网络性能分析方法
 
-## 出版物
+[1] Zhao lanhao, Ji Zhijian, Liu Yungang, Lin Chong. Controllability of General Linear Discrete Multiagent Systems with Directed and Weighted Signed Network. J Syst Sci Complex (2022). （SCI期刊，JCR Q1，中国科协高质量科技期刊分级目录数学领域T2期刊，卓越期刊行动计划英文梯队期刊）
+
+[2] 赵兰浩, 纪志坚. 符号网络条件下扩散耦合多智能体系统的可控性分析[J]. 系统科学与数学, 2021, 41(06):1455-1466. （中国科协高质量科技期刊分级目录数学领域T3期刊、管理科学领域中文T2期刊，卓越期刊行动计划中文梯队期刊，中文核心期刊）
+
+[3] Zhao lanhao. Estimation of Strong Structural Controllable Subspace of Network: Equitable Partition Method. https://doi.org/10.48550/arXiv.2204.11483
+
+[4] Zhao lanhao, Ji Zhijian, Liu Yungang, Lin Chong. Controllability and observability of linear multi-agent systems over matrix-weighted signed networks. https://doi.org/10.48550/arXiv.2204.00995
+
+
+### 方向二：多智能体系统控制基本理论
+
+[1] Chen Yangzhou, Zhao lanhao. Partial state consensus and output consensus in heterogeneous multi-agent systems. J Syst Sci Complex (2026). （SCI期刊，JCR Q1，中国科协高质量科技期刊分级目录数学领域T2期刊，卓越期刊行动计划英文梯队期刊）
+
+[2] Chen Yangzhou, Zhao lanhao et al. Consensus of heterogeneous multi-agent systems: linear transformation decentralized output feedback method. *Automatica*. Major Revision.
+
+[3] Chen Yangzhou, Zhao lanhao. Consensus of heterogeneous multi agent systems: A method based on basic edge state feedback and overlapping decomposition.
+
+[4] Zhao lanhao, Chen Yangzhou. Partial state consensus and output consensus in heterogeneous multi-agent systems: A method based on DETC.
+
+[5] Zhao lanhao, Chen Yangzhou. Decentralized design of leader-following consensus protocols for heterogeneous multiagent systems with asymmetric weight matrix. CISC.2024
+
+[6] Chen Yangzhou, Zhao lanhao. Decentralized design of consensus protocols with minimal communication links based on directed spanning tree. CCDC 2023. （中国自动化学会推荐 A类 会议）
+
+### 方向三：复杂场景下跟踪与编队方法
+
+[1] Guangxin Guo, Lanhao Zhao, Shaoqiu Xiao et al. Barrier function-based Preset-Time Bipartite Consensus for Nonlinear Multi-agent Systems under Disturbance: A Time-Varying Function Approach. Submitted.
+
+[2] Guangxin Guo, Lanhao Zhao. Event-Triggered Bipartite Consensus for Multiple AUVs under Safety Constraints and Disturbances: Adaptive Super-Twisting with Barrier Functions. Submitted.
+
+[3] 赵涛涛，赵兰浩，纪志坚等. 基于分层博弈的二阶多智能体系统分组编队[J]. 在审
+
+
+### 方向四：生物群体动力学演进和调控方法
+
+[1] Taotao ZHAO, Zhijian JI, Yungang LIU, Lanhao ZHAO, Linrong TAN. Bio-Inspired Broadcast Herdability of Large-Scale Swarms: A Mean Field Game Approach. Submitted.
+
+
+### 方向五：机器学习方法在构造显式控制律、显式李雅普诺夫函数等方面的应用
+
+[1] Zhao lanhao. Machine Learning for Lyapunov Function Synthesis. [RG. DOI: 10.13140/RG.2.2.13442.44482](https://www.researchgate.net/publication/403824777_Machine_Learning_for_Lyapunov_Function_Synthesis)
+
+
+### 科学普及
+
+[1] 赵兰浩. 社会尺度挑战下的控制：2030路线图（十一）（翻译作品）. 中国自动化学会通讯, 2023(12):41-45
+
+[2] 赵兰浩. 社会尺度挑战下的控制：2030路线图（一）（翻译作品）. 中国自动化学会通讯, 2023(6):60-63
+
+[3] 赵兰浩. 控制理论:一段故事(2)线性与非线性[J]. 中国自动化学会通讯, 2023(5):49-53
+
+[4] 赵兰浩. 控制理论的一段故事[J]. 中国自动化学会通讯, 2023(4):48-55
+
+[5] 赵兰浩. 控制理论几个基本问题的初步讨论[J]. 中国自动化学会通讯, 2023(4):56-61
+
+[6] 赵兰浩. 详解自动化专业的就业方向与前景[J]. 中国自动化学会通讯, 2022(06):76-80
+
+[7] 赵兰浩. 选择自动化专业应该知道的事情[J]. 中国自动化学会通讯, 2022(06):81-83
+
+[8] 赵兰浩. 写给选择自动化专业的新人[J]. 中国自动化学会通讯, 2022(06):84-87
 
 ### 教材
 
-《自动化学科导论》，副主编，中国地质大学出版社
+[1] 《自动化学科导论》，副主编，中国地质大学出版社
 
-### 英文期刊
-[1]Chen Yangzhou，Zhao lanhao. Partial state consensus and output consensus in heterogeneous multi-agent systems.  J Syst Sci Complex (2025). （SCI期刊，JCR Q1，中国科协高质量科技期刊分级目录数学领域T2期刊，卓越期刊行动计划英文梯队期刊）
+### 其他论文
 
-[2]Zhao lanhao, Ji Zhijian, Liu Yungang, Lin Chong. Controllability of General Linear Discrete Multiagent Systems with Directed and Weighted Signed Network. J Syst Sci Complex (2022). （SCI期刊，JCR Q1，中国科协高质量科技期刊分级目录数学领域T2期刊，卓越期刊行动计划英文梯队期刊）
+[1] 赵兰浩. 具有视力保护功能的智能台灯设计[J]. 山东工业技术, 2018(21):125.
 
-[3]Chen Yangzhou，Zhao lanhao et al. Consensus of heterogeneous multi-agent systems: linear transformation decentralized output feedback method. Automatica. Major Revision.
+[2] 赵兰浩. 短波通信技术发展综述[J]. 信息通信, 2017(11):257-258. （文献他引频次在中国知网“电信技术”领域排名前10%）
 
-[4]Chen Yangzhou，Zhao lanhao. Consensus of heterogeneous multi agent systems: A method based on basic edge state feedback and overlapping decomposition.  
-
-[5]Zhao lanhao, Chen Yangzhou.  Partial state consensus and output consensus in heterogeneous multi-agent systems: A method based on DETC.  
-
-[6]Guangxin Guo, Lanhao Zhao, Shaoqiu Xiao et al. Barrier function-based Preset-Time Bipartite Consensus for  Nonlinear Multi-agent Systems under Disturbance: A Time-Varying Function Approach. Submitted.
-
-[7]Guangxin Guo, Lanhao Zhao. Event-Triggered  Bipartite Consensus for Multiple AUVs under Safety Constraints and Disturbances: Adaptive Super-Twisting  with Barrier Functions. Submitted.
-
-[8]Taotao ZHAO, Zhijian JI, Yungang LIU,Lanhao ZHAO,Linrong TAN. Bio-Inspired Broadcast Herdability of Large-Scale Swarms: A Mean Field Game Approach. Submitted.
-
-
-### EI 会议
-
-[1]Zhao lanhao，Chen Yangzhou. Decentralized design of leader-following consensus protocols for heterogeneous multiagent systems with asymmetric weight matrix. CISC.2024 
-
-[2]Chen Yangzhou, Zhao lanhao. Decentralized design of consensus protocols with minimal communication links based on directed spanning tree.CCDC 2023. （中国自动化学会推荐 A类 会议）
-
-### 中文核心期刊
-
-[1]赵兰浩,纪志坚.符号网络条件下扩散耦合多智能体系统的可控性分析[J].系统科学与数学,2021,41(06):1455-1466. （中国科协高质量科技期刊分级目录数学领域T3期刊、管理科学领域中文T2期刊，卓越期刊行动计划中文梯队期刊，中文核心期刊）
-
-[2]赵涛涛，赵兰浩，纪志坚等.基于分层博弈的二阶多智能体系统分组编队[J]. 在审
-
-### 中文其他刊物
-
-[1]赵兰浩.社会尺度挑战下的控制：2030路线图（十一）（翻译作品）.中国自动化学会通讯，2023(12):41-45
-
-[2]赵兰浩.社会尺度挑战下的控制：2030路线图（一）（翻译作品）.中国自动化学会通讯，2023(6):60-63
-
-[3]赵兰浩.控制理论:一段故事(2)线性与非线性[J].中国自动化学会通讯，2023(5):49-53
-
-[4]赵兰浩.控制理论的一段故事[J].中国自动化学会通讯，2023(4):48-55
-
-[5]赵兰浩.控制理论几个基本问题的初步讨论[J].中国自动化学会通讯，2023(4):56-61
-
-[6]赵兰浩.详解自动化专业的就业方向与前景[J].中国自动化学会通讯,2022(06):76-80
-
-[7]赵兰浩.选择自动化专业应该知道的事情[J].中国自动化学会通讯,2022(06):81-83
-
-[8]赵兰浩.写给选择自动化专业的新人[J].中国自动化学会通讯,2022(06):84-87
-
-[9]赵兰浩.具有视力保护功能的智能台灯设计[J].山东工业技术,2018(21):125.
-
-[10]赵兰浩.短波通信技术发展综述[J].信息通信,2017(11):257-258.（文献他引频次在中国知网“电信技术”领域排名前10%）
-
-[11]赵兰浩,董鑫,孙晔.基于串级控制的密码锁安全性优化[J].电子世界,2017(05):94+96./感谢泰安市政府大学生科技创新行动计划对本论文的资助
-
-
-### 仅预印
-
-[1]Zhao lanhao. Estimation of Strong Structural Controllable Subspace of Network: Equitable Partition Method.
-https://doi.org/10.48550/arXiv.2204.11483 
-
-[2]Zhao lanhao, Ji Zhijian, Liu Yungang, Lin Chong. Controllability and observability of linear multi-agent systems over matrix-weighted signed networks.
-https://doi.org/10.48550/arXiv.2204.00995 
-
-[3]Zhao lanhao. Machine Learning for Lyapunov Function Synthesis. [RG. DOI: 10.13140/RG.2.2.13442.44482](https://www.researchgate.net/publication/403824777_Machine_Learning_for_Lyapunov_Function_Synthesis)
+[3] 赵兰浩, 董鑫, 孙晔. 基于串级控制的密码锁安全性优化[J]. 电子世界, 2017(05):94+96. (感谢泰安市政府大学生科技创新行动计划对本论文的资助)
 
 ## 社会服务
 
