@@ -96,6 +96,10 @@
                             <i data-lucide="user" class="w-5 h-5"></i>
                             <span class="font-medium whitespace-nowrap">个人简介</span>
                         </button>
+                        <button onclick="switchTab('publications')" id="nav-publications" class="nav-btn flex-shrink-0 flex items-center gap-3 w-full text-left px-4 py-3 rounded-xl transition border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
+                            <i data-lucide="book-open" class="w-5 h-5"></i>
+                            <span class="font-medium whitespace-nowrap">论文与项目</span>
+                        </button>
                         <button onclick="switchTab('life')" id="nav-life" class="nav-btn flex-shrink-0 flex items-center gap-3 w-full text-left px-4 py-3 rounded-xl transition border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
                             <i data-lucide="coffee" class="w-5 h-5"></i>
                             <span class="font-medium whitespace-nowrap">生活与诗词</span>
@@ -103,10 +107,6 @@
                         <button onclick="switchTab('community')" id="nav-community" class="nav-btn flex-shrink-0 flex items-center gap-3 w-full text-left px-4 py-3 rounded-xl transition border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
                             <i data-lucide="globe" class="w-5 h-5"></i>
                             <span class="font-medium whitespace-nowrap">学术与科普</span>
-                        </button>
-                        <button onclick="switchTab('publications')" id="nav-publications" class="nav-btn flex-shrink-0 flex items-center gap-3 w-full text-left px-4 py-3 rounded-xl transition border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
-                            <i data-lucide="book-open" class="w-5 h-5"></i>
-                            <span class="font-medium whitespace-nowrap">论文与项目</span>
                         </button>
                     </div>
                 </nav>
@@ -148,8 +148,8 @@
                         学术概览
                     </h2>
                     <div class="text-slate-700 leading-relaxed text-sm space-y-4">
-                        <p>近年来，主要围绕<strong>复杂网络性能分析、多智能体系统控制理论、生物群体动力学以及机器学习控制</strong>等交叉领域展开研究。目前已在 <em>J Syst Sci Complex</em>、<em>系统科学与数学</em> 等国内外核心学术期刊及会议上发表与录用论文 10 余篇，多项成果被 SCI JCR 一区及 CAA A 类会议收录。</p>
-                        <p>在学术与社会服务方面，担任 <em>Aerospace Engineering Communications</em> 期刊编辑，长期为 <em>IEEE TCST</em>, <em>IEEE TASE</em>, <em>IEEE TMM</em> 等顶级期刊及国际学术会议担任同行评议审稿人。此外，积极投身学术共同体建设，担任中国自动化学会相关科普专家及委员。</p>
+                        <p>近年来，主要围绕<strong>复杂网络性能分析、多智能体系统控制理论、生物群体动力学以及机器学习控制</strong>等交叉领域展开研究。详见论文列表。</p>
+                        <p>在学术与社会服务方面，担任 <em>Aerospace Engineering Communications</em> 期刊编辑，长期为 <em>IEEE TCST</em>, <em>IEEE TASE</em>, <em>IEEE TMM</em> 等顶级期刊和SR\TIMC\JCD等刊物及IEEE CASE CSMC\CAC\CCDC国际学术会议担任同行评议审稿人。此外，积极投身学术共同体建设，担任中国自动化学会普及工作委员会委员等职务。</p>
                     </div>
                 </div>
 
@@ -192,9 +192,6 @@
                         <div class="flex flex-col gap-3">
                             <span class="inline-flex items-center gap-2 p-3 bg-yellow-50 text-yellow-800 text-sm rounded-lg font-medium border border-yellow-200 hover:shadow-sm transition"><i data-lucide="star" class="w-4 h-4"></i> 知乎自动控制话题优秀答主 (全网仅三位)</span>
                             <span class="inline-flex items-center gap-2 p-3 bg-blue-50 text-blue-800 text-sm rounded-lg font-medium border border-blue-200 hover:shadow-sm transition"><i data-lucide="zap" class="w-4 h-4"></i> 2025 AI百大创造者年度人物</span>
-                            <span class="inline-flex items-center gap-2 p-3 bg-green-50 text-green-800 text-sm rounded-lg font-medium border border-green-200 hover:shadow-sm transition"><i data-lucide="leaf" class="w-4 h-4"></i> 2024 科普中国科普新锐</span>
-                            <span class="inline-flex items-center gap-2 p-3 bg-slate-50 text-slate-700 text-sm rounded-lg font-medium border border-slate-200 hover:shadow-sm transition"><i data-lucide="medal" class="w-4 h-4 text-slate-400"></i> 强军杯全国一等奖 (2024)</span>
-                            <span class="inline-flex items-center gap-2 p-3 bg-slate-50 text-slate-700 text-sm rounded-lg font-medium border border-slate-200 hover:shadow-sm transition"><i data-lucide="medal" class="w-4 h-4 text-slate-400"></i> 美赛三等奖 / 国赛省级三等奖</span>
                         </div>
                     </div>
                 </div>
