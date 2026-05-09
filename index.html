@@ -91,26 +91,22 @@
                 <nav class="mt-6 border-t lg:border-t-0 border-slate-100 pt-6 lg:pt-0">
                     <h3 class="font-semibold text-slate-400 uppercase tracking-wider text-xs mb-3 hidden lg:block">内容导航</h3>
                     <div class="flex lg:flex-col overflow-x-auto lg:overflow-visible gap-2 pb-2 lg:pb-0 hide-scrollbar" id="nav-container">
-                        <!-- 按钮通过 JS 动态切换状态 -->
-                        <button onclick="switchTab('education')" id="nav-education" class="nav-btn flex-shrink-0 flex items-center gap-3 w-full text-left px-4 py-3 rounded-xl transition border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
-                            <i data-lucide="graduation-cap" class="w-5 h-5"></i>
-                            <span class="font-medium whitespace-nowrap">求学经历</span>
+                        <!-- 按钮通过 JS 动态切换状态，顺序已调整 -->
+                        <button onclick="switchTab('profile')" id="nav-profile" class="nav-btn flex-shrink-0 flex items-center gap-3 w-full text-left px-4 py-3 rounded-xl transition border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
+                            <i data-lucide="user" class="w-5 h-5"></i>
+                            <span class="font-medium whitespace-nowrap">个人简介</span>
                         </button>
-                        <button onclick="switchTab('research')" id="nav-research" class="nav-btn flex-shrink-0 flex items-center gap-3 w-full text-left px-4 py-3 rounded-xl transition border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
-                            <i data-lucide="microscope" class="w-5 h-5"></i>
-                            <span class="font-medium whitespace-nowrap">研究领域</span>
-                        </button>
-                        <button onclick="switchTab('achievements')" id="nav-achievements" class="nav-btn flex-shrink-0 flex items-center gap-3 w-full text-left px-4 py-3 rounded-xl transition border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
-                            <i data-lucide="book-open" class="w-5 h-5"></i>
-                            <span class="font-medium whitespace-nowrap">论文与项目</span>
+                        <button onclick="switchTab('life')" id="nav-life" class="nav-btn flex-shrink-0 flex items-center gap-3 w-full text-left px-4 py-3 rounded-xl transition border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
+                            <i data-lucide="coffee" class="w-5 h-5"></i>
+                            <span class="font-medium whitespace-nowrap">生活与诗词</span>
                         </button>
                         <button onclick="switchTab('community')" id="nav-community" class="nav-btn flex-shrink-0 flex items-center gap-3 w-full text-left px-4 py-3 rounded-xl transition border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
                             <i data-lucide="globe" class="w-5 h-5"></i>
                             <span class="font-medium whitespace-nowrap">学术与科普</span>
                         </button>
-                        <button onclick="switchTab('life')" id="nav-life" class="nav-btn flex-shrink-0 flex items-center gap-3 w-full text-left px-4 py-3 rounded-xl transition border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
-                            <i data-lucide="coffee" class="w-5 h-5"></i>
-                            <span class="font-medium whitespace-nowrap">生活与诗词</span>
+                        <button onclick="switchTab('publications')" id="nav-publications" class="nav-btn flex-shrink-0 flex items-center gap-3 w-full text-left px-4 py-3 rounded-xl transition border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
+                            <i data-lucide="book-open" class="w-5 h-5"></i>
+                            <span class="font-medium whitespace-nowrap">论文与项目</span>
                         </button>
                     </div>
                 </nav>
@@ -137,94 +133,307 @@
         <!-- 右侧：主要内容流 (动态切换区域) -->
         <main class="w-full lg:w-2/3 xl:w-3/4 min-h-[60vh]">
             
-            <!-- 模块 1：求学经历 -->
-            <section id="section-education" class="content-section hidden">
+            <!-- ================== 模块 1：个人简介 ================== -->
+            <section id="section-profile" class="content-section hidden space-y-8">
+                
+                <!-- 移动端显示的引言 -->
+                <div class="lg:hidden p-4 bg-brand-50 rounded-xl border border-brand-100 text-sm text-brand-900 leading-relaxed font-serif italic">
+                    “欢迎光临我的数字花园。 这里不仅有数学模型，也有关于历史、游戏与诗歌的温度。”
+                </div>
+
+                <!-- 学术概览与社会服务 (核心前置并合并) -->
                 <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
                     <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3 pb-4 border-b border-slate-100">
-                        <div class="p-2 bg-brand-50 text-brand-600 rounded-lg"><i data-lucide="graduation-cap" class="w-6 h-6"></i></div>
-                        求学经历
+                        <div class="p-2 bg-brand-50 text-brand-600 rounded-lg"><i data-lucide="file-text" class="w-6 h-6"></i></div>
+                        学术概览
+                    </h2>
+                    <div class="text-slate-700 leading-relaxed text-sm space-y-4">
+                        <p>近年来，主要围绕<strong>复杂网络性能分析、多智能体系统控制理论、生物群体动力学以及机器学习控制</strong>等交叉领域展开研究。目前已在 <em>J Syst Sci Complex</em>、<em>系统科学与数学</em> 等国内外核心学术期刊及会议上发表与录用论文 10 余篇，多项成果被 SCI JCR 一区及 CAA A 类会议收录。</p>
+                        <p>在学术与社会服务方面，担任 <em>Aerospace Engineering Communications</em> 期刊编辑，长期为 <em>IEEE TCST</em>, <em>IEEE TASE</em>, <em>IEEE TMM</em> 等顶级期刊及国际学术会议担任同行评议审稿人。此外，积极投身学术共同体建设，担任中国自动化学会相关科普专家及委员。</p>
+                    </div>
+                </div>
+
+                <!-- 求学经历 & 荣誉奖项 -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    
+                    <!-- 求学经历 (弱化为小块) -->
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
+                        <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3 pb-4 border-b border-slate-100">
+                            <div class="p-2 bg-brand-50 text-brand-600 rounded-lg"><i data-lucide="graduation-cap" class="w-5 h-5"></i></div>
+                            求学经历
+                        </h2>
+                        <div class="space-y-6 relative border-l-2 border-slate-100 ml-2 text-sm">
+                            <div class="relative pl-5 timeline-dot">
+                                <div class="text-xs text-brand-600 font-semibold mb-1">2022年起 - 至今</div>
+                                <h3 class="font-bold text-slate-800">北京工业大学</h3>
+                                <p class="text-slate-600 mt-1">控制科学与工程 <span class="mx-1 text-slate-300">|</span> 工学博士</p>
+                                <p class="text-slate-500 mt-0.5 text-xs">导师：陈阳舟 教授</p>
+                            </div>
+                            <div class="relative pl-5 timeline-dot">
+                                <div class="text-xs text-brand-600 font-semibold mb-1">2019年 - 2022年</div>
+                                <h3 class="font-bold text-slate-800">青岛大学</h3>
+                                <p class="text-slate-600 mt-1">系统科学 <span class="mx-1 text-slate-300">|</span> 理学硕士</p>
+                                <p class="text-slate-500 mt-0.5 text-xs">导师：纪志坚 教授</p>
+                            </div>
+                            <div class="relative pl-5 timeline-dot">
+                                <div class="text-xs text-brand-600 font-semibold mb-1">2014年 - 2018年</div>
+                                <h3 class="font-bold text-slate-800">山东科技大学</h3>
+                                <p class="text-slate-600 mt-1">自动化专业 <span class="mx-1 text-slate-300">|</span> 工学学士</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 荣誉与奖项 -->
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
+                        <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3 pb-4 border-b border-slate-100">
+                            <div class="p-2 bg-yellow-50 text-yellow-600 rounded-lg"><i data-lucide="award" class="w-5 h-5"></i></div>
+                            荣誉与奖项
+                        </h2>
+                        <div class="flex flex-col gap-3">
+                            <span class="inline-flex items-center gap-2 p-3 bg-yellow-50 text-yellow-800 text-sm rounded-lg font-medium border border-yellow-200 hover:shadow-sm transition"><i data-lucide="star" class="w-4 h-4"></i> 知乎自动控制话题优秀答主 (全网仅三位)</span>
+                            <span class="inline-flex items-center gap-2 p-3 bg-blue-50 text-blue-800 text-sm rounded-lg font-medium border border-blue-200 hover:shadow-sm transition"><i data-lucide="zap" class="w-4 h-4"></i> 2025 AI百大创造者年度人物</span>
+                            <span class="inline-flex items-center gap-2 p-3 bg-green-50 text-green-800 text-sm rounded-lg font-medium border border-green-200 hover:shadow-sm transition"><i data-lucide="leaf" class="w-4 h-4"></i> 2024 科普中国科普新锐</span>
+                            <span class="inline-flex items-center gap-2 p-3 bg-slate-50 text-slate-700 text-sm rounded-lg font-medium border border-slate-200 hover:shadow-sm transition"><i data-lucide="medal" class="w-4 h-4 text-slate-400"></i> 强军杯全国一等奖 (2024)</span>
+                            <span class="inline-flex items-center gap-2 p-3 bg-slate-50 text-slate-700 text-sm rounded-lg font-medium border border-slate-200 hover:shadow-sm transition"><i data-lucide="medal" class="w-4 h-4 text-slate-400"></i> 美赛三等奖 / 国赛省级三等奖</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================== 模块 2：生活视界 & 诗词 ================== -->
+            <section id="section-life" class="content-section hidden space-y-8">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 relative overflow-hidden">
+                    <!-- 装饰背景 -->
+                    <div class="absolute top-0 right-0 -mt-10 -mr-10 text-slate-50 opacity-50 pointer-events-none">
+                        <i data-lucide="coffee" class="w-64 h-64"></i>
+                    </div>
+                    
+                    <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3 relative z-10 pb-4 border-b border-slate-100">
+                        <div class="p-2 bg-brand-50 text-brand-600 rounded-lg"><i data-lucide="palmtree" class="w-6 h-6"></i></div>
+                        太枯燥了？来点好玩的！
+                    </h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 relative z-10 text-sm">
+                        <!-- 证书玩玩 -->
+                        <div>
+                            <h3 class="text-lg font-bold text-brand-600 mb-3 border-l-4 border-brand-500 pl-3">奇趣证书收集</h3>
+                            <p class="text-slate-500 mb-4 italic">“认真评价含金量你就输了”</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1.5 bg-slate-50 border border-slate-100 rounded-lg text-slate-700">欧洲开放大学 MBA</span>
+                                <span class="px-3 py-1.5 bg-slate-50 border border-slate-100 rounded-lg text-slate-700">中国旅游专家</span>
+                                <span class="px-3 py-1.5 bg-slate-50 border border-slate-100 rounded-lg text-slate-700">秘鲁旅游专家</span>
+                                <span class="px-3 py-1.5 bg-slate-50 border border-slate-100 rounded-lg text-slate-700">波兰旅游专家</span>
+                                <span class="px-3 py-1.5 bg-slate-50 border border-slate-100 rounded-lg text-slate-700">泰国旅游大师</span>
+                                <span class="px-3 py-1.5 bg-slate-50 border border-slate-100 rounded-lg text-slate-700">玩美专家</span>
+                            </div>
+                        </div>
+
+                        <!-- 游戏与电影 -->
+                        <div>
+                            <h3 class="text-lg font-bold text-brand-600 mb-3 border-l-4 border-brand-500 pl-3">第九艺术与电影</h3>
+                            <p class="text-slate-600 leading-relaxed bg-slate-50 p-4 rounded-xl border border-slate-100">
+                                曾在铁马冰河前线重绘版图，也曾在无中生有的方块世界做造物主。<br><br>
+                                身披霍格沃茨星辉，紧握狙击手扳机；在神秘海域寻找文明。不论峡谷并肩，还是天涯策马，这些不仅是游戏，更是另一种自由。<br>
+                                <span class="italic text-brand-600 mt-3 block">“对着假的东西热泪盈眶，大概是人类的独有情感。”</span>
+                            </p>
+                        </div>
+
+                        <!-- 行万里路 -->
+                        <div class="md:col-span-2">
+                            <h3 class="text-lg font-bold text-brand-600 mb-4 border-l-4 border-brand-500 pl-3">没观过世界，哪来的世界观？</h3>
+                            <p class="text-slate-500 mb-4">足迹遍布多省，除知名景点外，更热衷于历史遗迹踏查：</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 hover:border-brand-300 transition">
+                                    <strong class="text-slate-800 block mb-2 text-base">北京</strong>
+                                    <span class="text-slate-600 text-xs leading-relaxed">金中都城墙遗址、明十三陵、晚清民国郊区村落考察。</span>
+                                </div>
+                                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 hover:border-brand-300 transition">
+                                    <strong class="text-slate-800 block mb-2 text-base">山东 (泰安/青岛)</strong>
+                                    <span class="text-slate-600 text-xs leading-relaxed">岱庙碑刻、大汶口文化、青岛德国殖民要塞。</span>
+                                </div>
+                                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 hover:border-brand-300 transition">
+                                    <strong class="text-slate-800 block mb-2 text-base">四川 (成都/广汉)</strong>
+                                    <span class="text-slate-600 text-xs leading-relaxed">三星堆、金沙遗址、前蜀皇帝王建墓、望丛祠。</span>
+                                </div>
+                                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 hover:border-brand-300 transition">
+                                    <strong class="text-slate-800 block mb-2 text-base">江苏/河南</strong>
+                                    <span class="text-slate-600 text-xs leading-relaxed">徐州楚王陵、南京明孝陵、开封历代城墙叠压遗迹。</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 读书破万卷 -->
+                        <div class="md:col-span-2">
+                            <h3 class="text-lg font-bold text-brand-600 mb-4 border-l-4 border-brand-500 pl-3">所幸，我们还可以读书</h3>
+                            <details class="group bg-slate-50 rounded-xl border border-slate-100">
+                                <summary class="cursor-pointer p-4 font-medium text-slate-800 hover:text-brand-600 transition outline-none">
+                                    点击展开我的书单 (涵盖古文、通史、小说、学术等 11 大类)
+                                </summary>
+                                <div class="p-5 pt-2 text-slate-600 text-sm leading-relaxed space-y-3 border-t border-slate-200 mt-2 mx-2">
+                                    <p><strong>古文/通史：</strong> 历代经典古文选集、山海经、梦溪笔谈、陶庵梦忆、浮生六记、中国通史、全球通史...</p>
+                                    <p><strong>中国/国外历史：</strong> 乡土中国、万历15年、饥饿的盛世、置身事内、二手时间、纳粹帝国的腐败与反腐...</p>
+                                    <p><strong>文学/小说：</strong> 鲁迅作品集、我们仨、白银时代、百年孤独、月亮与六便士、瓦尔登湖、悉达多...</p>
+                                    <p><strong>日本专题：</strong> 菊与刀、战后日本经济史、雪国、解忧杂货店、人间值得...</p>
+                                    <p><strong>学术著作：</strong> 资本论、国富论、法治的细节、乌合之众、梦的解析、通向奴役之路...</p>
+                                    <p><strong>建筑与科普：</strong> 营造法式、海错图笔记、复杂、当我们谈论AI...</p>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 诗词创作 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 text-center relative">
+                    <div class="absolute top-4 left-4 text-slate-100"><i data-lucide="quote" class="w-12 h-12"></i></div>
+                    
+                    <h2 class="text-2xl font-serif font-bold text-slate-800 mb-8 flex items-center justify-center gap-2">
+                        <i data-lucide="feather" class="w-6 h-6 text-brand-600"></i>
+                        少年不知愁滋味，为赋新词强说愁
                     </h2>
                     
-                    <!-- 移动端显示的引言（弥补侧边栏隐藏的不足） -->
-                    <div class="lg:hidden mb-8 p-4 bg-brand-50 rounded-xl border border-brand-100 text-sm text-brand-900 leading-relaxed font-serif italic">
-                        “欢迎光临我的数字花园。 这里不仅有数学模型，也有关于历史、游戏与诗歌的温度。”
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8 text-slate-700 font-serif text-sm leading-loose">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md transition">
+                            <h4 class="font-bold text-slate-900 mb-3 border-b border-slate-200 pb-2 inline-block">读史有感(一)</h4><br>
+                            半部史书概古今，世间几个能入心？<br>
+                            五车难抵铜山贵，四库不若金穴深。<br>
+                            莫笑前贤多迂阔，知往才可善耕耘。<br>
+                            掩卷重看千重浪，螺旋直上助新轮。
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md transition">
+                            <h4 class="font-bold text-slate-900 mb-3 border-b border-slate-200 pb-2 inline-block">读史有感(二)</h4><br>
+                            雄主布衣登九天，子孙锦绣陷牢关。<br>
+                            从来贫贱磨英气，自古膏粱行路艰。<br>
+                            朱明一僧取天下，宗族十万丧江山。<br>
+                            兴替原本凭民意，岂有一家世代传？
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md transition">
+                            <h4 class="font-bold text-slate-900 mb-3 border-b border-slate-200 pb-2 inline-block">读史有感(三)</h4><br>
+                            宰相观舞意正酣，一曲一绫反遭嫌。<br>
+                            满座公卿皆噤口，唯余弱女敢直言。<br>
+                            柔肩亦自有侠骨，讽谏不平独一篇。<br>
+                            胭风粉雪终消散，留得正气满人间。
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md transition">
+                            <h4 class="font-bold text-slate-900 mb-3 border-b border-slate-200 pb-2 inline-block">咏雪</h4><br>
+                            暮有细雪意嫌轻，触身化水似雨行。<br>
+                            夜深更觉无声息，漫天盐粒四飘零。<br>
+                            笑指尘泥温未退，难留琼玉一枝停。<br>
+                            谁知朝来探窗去，天地白茫使人惊。
+                        </div>
                     </div>
 
-                    <div class="space-y-8 relative border-l-2 border-slate-100 ml-3">
-                        <div class="relative pl-6 timeline-dot">
-                            <div class="text-sm text-brand-600 font-semibold mb-1">2022年起 - 至今</div>
-                            <h3 class="text-lg font-bold text-slate-800">北京工业大学 信息科学技术学院</h3>
-                            <p class="text-slate-600 mt-1">控制科学与工程 <span class="mx-2 text-slate-300">|</span> 工学博士学位</p>
-                            <div class="inline-block px-3 py-1 bg-slate-50 border border-slate-100 rounded-md text-sm text-slate-500 mt-3">
-                                导师：陈阳舟 教授
-                            </div>
-                        </div>
-
-                        <div class="relative pl-6 timeline-dot">
-                            <div class="text-sm text-brand-600 font-semibold mb-1">2019年 - 2022年</div>
-                            <h3 class="text-lg font-bold text-slate-800">青岛大学 自动化学院</h3>
-                            <p class="text-slate-600 mt-1">系统科学 <span class="mx-2 text-slate-300">|</span> 理学硕士学位</p>
-                            <div class="inline-block px-3 py-1 bg-slate-50 border border-slate-100 rounded-md text-sm text-slate-500 mt-3">
-                                导师：纪志坚 教授
-                            </div>
-                        </div>
-
-                        <div class="relative pl-6 timeline-dot">
-                            <div class="text-sm text-brand-600 font-semibold mb-1">2014年 - 2018年</div>
-                            <h3 class="text-lg font-bold text-slate-800">山东科技大学（泰安校区） 机电工程系</h3>
-                            <p class="text-slate-600 mt-1">自动化专业 <span class="mx-2 text-slate-300">|</span> 工学学士学位</p>
+                    <div class="mt-10 pt-8 border-t border-slate-100 max-w-lg mx-auto">
+                        <h3 class="text-lg font-bold text-slate-900 mb-4 tracking-widest flex justify-center items-center gap-2">
+                            <i data-lucide="heart" class="w-4 h-4 text-rose-500 fill-rose-500"></i> 特别：胜春风
+                        </h3>
+                        <div class="font-serif text-base text-slate-700 leading-loose italic bg-rose-50 p-6 rounded-xl border border-rose-100">
+                            曾嘲烈爱尽虚言，不信惊鸿乱管弦。<br>
+                            幸遇同心行远路，共凭肝胆御霜烟。<br>
+                            方知身是半轮月，补得圆光照大千。<br>
+                            若存疏拙祈宽宥，定胜春风越万山。
                         </div>
                     </div>
                 </div>
+
+                <!-- 结尾寄语 -->
+                <footer class="mt-8 text-center pt-8">
+                    <p class="text-slate-500 font-serif italic mb-6">
+                        网页告一段落，但故事仍在书写。<br>
+                        “陆止于此，海始于斯”。勇敢的人啊，新的斗争开始了～
+                    </p>
+                    <div class="max-w-md mx-auto rounded-xl overflow-hidden shadow-md border border-slate-200">
+                        <img src="/mmexport1730478694900.jpg" alt="留言" class="w-full h-auto hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1455390582262-044cdead2708?q=80&w=600&auto=format&fit=crop'; this.alt='Ending Image';">
+                    </div>
+                </footer>
             </section>
 
-            <!-- 模块 2：研究兴趣 -->
-            <section id="section-research" class="content-section hidden">
+            <!-- ================== 模块 3：学术与科普 ================== -->
+            <section id="section-community" class="content-section hidden space-y-8">
+                
                 <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
                     <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3 pb-4 border-b border-slate-100">
-                        <div class="p-2 bg-brand-50 text-brand-600 rounded-lg"><i data-lucide="microscope" class="w-6 h-6"></i></div>
-                        研究兴趣
+                        <div class="p-2 bg-brand-50 text-brand-600 rounded-lg"><i data-lucide="globe" class="w-6 h-6"></i></div>
+                        科学普及与影响力
                     </h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div class="flex items-start gap-4 p-5 rounded-xl bg-slate-50 border border-slate-100 hover:border-brand-200 hover:bg-brand-50/30 transition group">
-                            <div class="p-2 bg-white rounded-lg shadow-sm group-hover:text-brand-600 transition"><i data-lucide="network" class="w-6 h-6 text-brand-500"></i></div>
+                    
+                    <div class="bg-brand-50 text-brand-900 p-5 rounded-xl text-sm leading-relaxed mb-6 border border-brand-100 shadow-inner">
+                        以“系统与控制”为名于知乎、微信公众号等平台累计发布内容2000余条，汇聚全球70余个国家/地区7万名关注者，总阅读及播放量<strong class="text-brand-600 text-base mx-1">逾一千万次</strong>。与国际自动控制联合会建立合作，作品多次被官方转载。
+                    </div>
+                    
+                    <div class="flex flex-col md:flex-row gap-6 text-sm text-slate-700">
+                        <div class="flex-1 bg-slate-50 p-5 rounded-xl border border-slate-100 flex items-start gap-3">
+                            <i data-lucide="feather" class="w-5 h-5 text-brand-500 mt-0.5"></i>
                             <div>
-                                <h4 class="font-bold text-slate-800 mb-1">复杂网络</h4>
-                                <span class="text-sm text-slate-600">复杂网络性能分析方法</span>
+                                <h4 class="font-bold text-slate-900 mb-1">科普创作与翻译</h4>
+                                <p class="text-slate-600">发表多篇《中国自动化学会通讯》等学术通讯的科普翻译与原创文章，致力于控制理论的前沿普及。</p>
                             </div>
                         </div>
-                        <div class="flex items-start gap-4 p-5 rounded-xl bg-slate-50 border border-slate-100 hover:border-brand-200 hover:bg-brand-50/30 transition group">
-                            <div class="p-2 bg-white rounded-lg shadow-sm group-hover:text-brand-600 transition"><i data-lucide="bot" class="w-6 h-6 text-brand-500"></i></div>
+                        <div class="flex-1 bg-slate-50 p-5 rounded-xl border border-slate-100 flex items-start gap-3">
+                            <i data-lucide="monitor-play" class="w-5 h-5 text-brand-500 mt-0.5"></i>
                             <div>
-                                <h4 class="font-bold text-slate-800 mb-1">多智能体系统</h4>
-                                <span class="text-sm text-slate-600">多智能体系统控制基本理论及其应用</span>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4 p-5 rounded-xl bg-slate-50 border border-slate-100 hover:border-brand-200 hover:bg-brand-50/30 transition group">
-                            <div class="p-2 bg-white rounded-lg shadow-sm group-hover:text-brand-600 transition"><i data-lucide="dna" class="w-6 h-6 text-brand-500"></i></div>
-                            <div>
-                                <h4 class="font-bold text-slate-800 mb-1">群体动力学</h4>
-                                <span class="text-sm text-slate-600">生物群体动力学演进和博弈调控方法</span>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4 p-5 rounded-xl bg-slate-50 border border-slate-100 hover:border-brand-200 hover:bg-brand-50/30 transition group">
-                            <div class="p-2 bg-white rounded-lg shadow-sm group-hover:text-brand-600 transition"><i data-lucide="cpu" class="w-6 h-6 text-brand-500"></i></div>
-                            <div>
-                                <h4 class="font-bold text-slate-800 mb-1">机器学习控制</h4>
-                                <span class="text-sm text-slate-600">在构造显式控制律、显式李雅普诺夫函数等方面的应用</span>
+                                <h4 class="font-bold text-slate-900 mb-1">在线工具开发</h4>
+                                <p class="text-slate-600">主导开发：<a href="https://cool-koala.github.io/Control-Theory-Simulator/" class="text-brand-600 hover:underline font-semibold" target="_blank">百种控制理论在线模拟器</a>。为初学者提供直观的学习工具，已获千次收藏。</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                <!-- 合作企业与机构 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
+                    <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3 pb-4 border-b border-slate-100">
+                        <div class="p-2 bg-brand-50 text-brand-600 rounded-lg"><i data-lucide="building-2" class="w-5 h-5"></i></div>
+                        合作企业与机构
+                    </h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-white text-slate-700 text-sm rounded-md border border-slate-200 hover:border-brand-300 hover:text-brand-600 transition cursor-default">支付宝（杭州）</span>
+                        <span class="px-3 py-1.5 bg-white text-slate-700 text-sm rounded-md border border-slate-200 hover:border-brand-300 hover:text-brand-600 transition cursor-default">亚马逊 AWS</span>
+                        <span class="px-3 py-1.5 bg-white text-slate-700 text-sm rounded-md border border-slate-200 hover:border-brand-300 hover:text-brand-600 transition cursor-default">上海小度技术</span>
+                        <span class="px-3 py-1.5 bg-white text-slate-700 text-sm rounded-md border border-slate-200 hover:border-brand-300 hover:text-brand-600 transition cursor-default">阿里千问</span>
+                        <span class="px-3 py-1.5 bg-white text-slate-700 text-sm rounded-md border border-slate-200 hover:border-brand-300 hover:text-brand-600 transition cursor-default">芯源系统 MPS</span>
+                        <span class="px-3 py-1.5 bg-white text-slate-700 text-sm rounded-md border border-slate-200 hover:border-brand-300 hover:text-brand-600 transition cursor-default">清华大学出版社</span>
+                        <span class="px-3 py-1.5 bg-white text-slate-700 text-sm rounded-md border border-slate-200 hover:border-brand-300 hover:text-brand-600 transition cursor-default">卡西欧（中国）</span>
+                        <span class="px-3 py-1.5 bg-white text-slate-700 text-sm rounded-md border border-slate-200 hover:border-brand-300 hover:text-brand-600 transition cursor-default">日东电工</span>
+                        <span class="px-3 py-1.5 bg-white text-slate-700 text-sm rounded-md border border-slate-200 hover:border-brand-300 hover:text-brand-600 transition cursor-default">图瓦斯安全系统</span>
+                        <span class="px-3 py-1.5 bg-white text-slate-700 text-sm rounded-md border border-slate-200 hover:border-brand-300 hover:text-brand-600 transition cursor-default">芬发自动化</span>
+                    </div>
+                </div>
+
             </section>
 
-            <!-- 模块 3：出版物与项目 (整合) -->
-            <section id="section-achievements" class="content-section hidden space-y-8">
-                <!-- 出版物 -->
+            <!-- ================== 模块 4：论文与项目 ================== -->
+            <section id="section-publications" class="content-section hidden space-y-8">
+                
+                <!-- 参与科研项目 (移至论文列表前作为背景支撑) -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
+                    <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3 pb-4 border-b border-slate-100">
+                        <div class="p-2 bg-brand-50 text-brand-600 rounded-lg"><i data-lucide="layers" class="w-5 h-5"></i></div>
+                        参与科研项目
+                    </h2>
+                    <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4 text-sm text-slate-700">
+                        <li class="bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md hover:border-brand-200 transition">
+                            <span class="font-bold block text-slate-900 mb-1">智能密码锁的安全性优化</span>
+                            <span class="text-slate-500 text-xs">泰安市大学生科技创新行动计划B类项目 · 主持</span>
+                        </li>
+                        <li class="bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md hover:border-brand-200 transition">
+                            <span class="font-bold block text-slate-900 mb-1">多智能体系统基于结构分解的分析与控制</span>
+                            <span class="text-slate-500 text-xs">国家自然科学基金面上资助项目 (61873136) · 参与</span>
+                        </li>
+                        <li class="bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md hover:border-brand-200 transition">
+                            <span class="font-bold block text-slate-900 mb-1">高性能协同控制核心理论与关键技术</span>
+                            <span class="text-slate-500 text-xs">国家自然科学基金重点资助项目 (62033007) · 参与</span>
+                        </li>
+                        <li class="bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md hover:border-brand-200 transition">
+                            <span class="font-bold block text-slate-900 mb-1">异构多智能体系统的分散化设计</span>
+                            <span class="text-slate-500 text-xs">北京市自然科学基金面上项目 (4232041) · 参与</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 出版物详细列表 -->
                 <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
                     <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3 pb-4 border-b border-slate-100">
                         <div class="p-2 bg-brand-50 text-brand-600 rounded-lg"><i data-lucide="book-open" class="w-6 h-6"></i></div>
-                        学术论文出版物
+                        学术论文详细列表
                     </h2>
                     
                     <div class="space-y-8">
@@ -312,263 +521,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- 参与项目 & 合作企业 -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
-                        <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3 pb-4 border-b border-slate-100">
-                            <div class="p-2 bg-brand-50 text-brand-600 rounded-lg"><i data-lucide="layers" class="w-5 h-5"></i></div>
-                            参与科研项目
-                        </h2>
-                        <ul class="space-y-4 text-sm text-slate-700">
-                            <li class="bg-slate-50 p-3 rounded-lg border border-slate-100 hover:shadow-md transition">
-                                <span class="font-bold block text-slate-900">智能密码锁的安全性优化</span>
-                                <span class="text-slate-500 text-xs">泰安市大学生科技创新行动计划B类项目 · 主持</span>
-                            </li>
-                            <li class="bg-slate-50 p-3 rounded-lg border border-slate-100 hover:shadow-md transition">
-                                <span class="font-bold block text-slate-900">多智能体系统基于结构分解的分析与控制</span>
-                                <span class="text-slate-500 text-xs">国家自然科学基金面上资助项目 (61873136) · 参与</span>
-                            </li>
-                            <li class="bg-slate-50 p-3 rounded-lg border border-slate-100 hover:shadow-md transition">
-                                <span class="font-bold block text-slate-900">高性能协同控制核心理论与关键技术</span>
-                                <span class="text-slate-500 text-xs">国家自然科学基金重点资助项目 (62033007) · 参与</span>
-                            </li>
-                            <li class="bg-slate-50 p-3 rounded-lg border border-slate-100 hover:shadow-md transition">
-                                <span class="font-bold block text-slate-900">异构多智能体系统的分散化设计</span>
-                                <span class="text-slate-500 text-xs">北京市自然科学基金面上项目 (4232041) · 参与</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
-                        <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3 pb-4 border-b border-slate-100">
-                            <div class="p-2 bg-brand-50 text-brand-600 rounded-lg"><i data-lucide="building-2" class="w-5 h-5"></i></div>
-                            合作企业与机构
-                        </h2>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1.5 bg-white text-slate-700 text-sm rounded-md border border-slate-200 hover:border-brand-300 hover:text-brand-600 transition cursor-default">支付宝（杭州）</span>
-                            <span class="px-3 py-1.5 bg-white text-slate-700 text-sm rounded-md border border-slate-200 hover:border-brand-300 hover:text-brand-600 transition cursor-default">亚马逊 AWS</span>
-                            <span class="px-3 py-1.5 bg-white text-slate-700 text-sm rounded-md border border-slate-200 hover:border-brand-300 hover:text-brand-600 transition cursor-default">上海小度技术</span>
-                            <span class="px-3 py-1.5 bg-white text-slate-700 text-sm rounded-md border border-slate-200 hover:border-brand-300 hover:text-brand-600 transition cursor-default">阿里千问</span>
-                            <span class="px-3 py-1.5 bg-white text-slate-700 text-sm rounded-md border border-slate-200 hover:border-brand-300 hover:text-brand-600 transition cursor-default">芯源系统 MPS</span>
-                            <span class="px-3 py-1.5 bg-white text-slate-700 text-sm rounded-md border border-slate-200 hover:border-brand-300 hover:text-brand-600 transition cursor-default">清华大学出版社</span>
-                            <span class="px-3 py-1.5 bg-white text-slate-700 text-sm rounded-md border border-slate-200 hover:border-brand-300 hover:text-brand-600 transition cursor-default">卡西欧（中国）</span>
-                            <span class="px-3 py-1.5 bg-white text-slate-700 text-sm rounded-md border border-slate-200 hover:border-brand-300 hover:text-brand-600 transition cursor-default">日东电工</span>
-                            <span class="px-3 py-1.5 bg-white text-slate-700 text-sm rounded-md border border-slate-200 hover:border-brand-300 hover:text-brand-600 transition cursor-default">图瓦斯安全系统</span>
-                            <span class="px-3 py-1.5 bg-white text-slate-700 text-sm rounded-md border border-slate-200 hover:border-brand-300 hover:text-brand-600 transition cursor-default">芬发自动化</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 模块 4：社区服务与科学普及 -->
-            <section id="section-community" class="content-section hidden">
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
-                    <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3 pb-4 border-b border-slate-100">
-                        <div class="p-2 bg-brand-50 text-brand-600 rounded-lg"><i data-lucide="globe" class="w-6 h-6"></i></div>
-                        学术社区服务与科普
-                    </h2>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                        <!-- 社区服务 -->
-                        <div>
-                            <h3 class="font-bold text-lg text-slate-800 mb-4">审稿与学术服务</h3>
-                            <ul class="space-y-3 text-sm text-slate-700">
-                                <li class="flex items-start gap-2">
-                                    <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 shrink-0"></i> 
-                                    <span><strong>期刊编辑:</strong> Aerospace Engineering Communications</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 shrink-0"></i> 
-                                    <span><strong>顶刊审稿:</strong> IEEE TCST, IEEE TASE, IEEE TMM</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 shrink-0"></i> 
-                                    <span><strong>其他期刊:</strong> Sci Rep, JCD, TIMC, FME, Franklin Open</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 shrink-0"></i> 
-                                    <span><strong>会议审稿:</strong> IEEE CASE, SMC, CCDC 等</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500 shrink-0"></i> 
-                                    <span><strong>社会兼职:</strong> 中国自动化学会相关科普专家、委员</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- 科学普及 -->
-                        <div>
-                            <h3 class="font-bold text-lg text-slate-800 mb-4">科普影响</h3>
-                            <div class="bg-brand-50 text-brand-900 p-4 rounded-xl text-sm leading-relaxed mb-4 border border-brand-100 shadow-inner">
-                                以“系统与控制”为名于知乎、微信公众号等平台累计发布内容2000余条，汇聚全球70余个国家/地区7万名关注者，总阅读及播放量<strong>逾一千万次</strong>。与国际自动控制联合会建立合作，作品多次被官方转载。
-                            </div>
-                            <ul class="text-sm text-slate-600 space-y-2 list-disc pl-5">
-                                <li>发表多篇《中国自动化学会通讯》科普翻译与原创文章。</li>
-                                <li>开发：<a href="https://cool-koala.github.io/Control-Theory-Simulator/" class="text-brand-600 hover:underline font-semibold" target="_blank">百种控制理论在线模拟器</a> (获千次收藏)</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- 荣誉奖励 -->
-                    <div class="mt-10 pt-6 border-t border-slate-100">
-                        <h3 class="font-bold text-lg text-slate-800 mb-4 flex items-center gap-2"><i data-lucide="award" class="w-5 h-5 text-yellow-500"></i> 荣誉与奖项</h3>
-                        <div class="flex flex-wrap gap-3">
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-yellow-50 text-yellow-800 text-sm rounded-full font-medium border border-yellow-200"><i data-lucide="star" class="w-4 h-4"></i> 知乎自动控制话题优秀答主 (全网仅三位)</span>
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-50 text-blue-800 text-sm rounded-full font-medium border border-blue-200"><i data-lucide="zap" class="w-4 h-4"></i> 2025 AI百大创造者年度人物</span>
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-green-50 text-green-800 text-sm rounded-full font-medium border border-green-200"><i data-lucide="leaf" class="w-4 h-4"></i> 2024 科普中国科普新锐</span>
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-slate-50 text-slate-700 text-sm rounded-full font-medium border border-slate-200">强军杯全国一等奖 (2024)</span>
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-slate-50 text-slate-700 text-sm rounded-full font-medium border border-slate-200">美赛三等奖 / 国赛省级三等奖</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 模块 5：生活视界 & 诗词 (Fun Section) -->
-            <section id="section-life" class="content-section hidden space-y-8">
-                <div class="bg-slate-900 rounded-2xl shadow-sm text-slate-100 p-8 relative overflow-hidden">
-                    <!-- 装饰背景 -->
-                    <div class="absolute top-0 right-0 -mt-10 -mr-10 text-slate-800 opacity-50">
-                        <i data-lucide="coffee" class="w-64 h-64"></i>
-                    </div>
-                    
-                    <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3 relative z-10 pb-4 border-b border-slate-800">
-                        <div class="p-2 bg-slate-800 text-brand-400 rounded-lg"><i data-lucide="palmtree" class="w-6 h-6"></i></div>
-                        太枯燥了？来点好玩的！
-                    </h2>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 relative z-10 text-sm">
-                        <!-- 证书玩玩 -->
-                        <div>
-                            <h3 class="text-lg font-bold text-brand-400 mb-3 border-l-4 border-brand-500 pl-3">奇趣证书收集</h3>
-                            <p class="text-slate-400 mb-4 italic">“认真评价含金量你就输了”</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-slate-300">欧洲开放大学 MBA</span>
-                                <span class="px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-slate-300">中国旅游专家</span>
-                                <span class="px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-slate-300">秘鲁旅游专家</span>
-                                <span class="px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-slate-300">波兰旅游专家</span>
-                                <span class="px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-slate-300">泰国旅游大师</span>
-                                <span class="px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-lg text-slate-300">玩美专家</span>
-                            </div>
-                        </div>
-
-                        <!-- 游戏与电影 -->
-                        <div>
-                            <h3 class="text-lg font-bold text-brand-400 mb-3 border-l-4 border-brand-500 pl-3">第九艺术与电影</h3>
-                            <p class="text-slate-300 leading-relaxed bg-slate-800/50 p-4 rounded-xl border border-slate-700/50">
-                                曾在铁马冰河前线重绘版图，也曾在无中生有的方块世界做造物主。<br><br>
-                                身披霍格沃茨星辉，紧握狙击手扳机；在神秘海域寻找文明。不论峡谷并肩，还是天涯策马，这些不仅是游戏，更是另一种自由。<br>
-                                <span class="italic text-brand-200 mt-3 block">“对着假的东西热泪盈眶，大概是人类的独有情感。”</span>
-                            </p>
-                        </div>
-
-                        <!-- 行万里路 -->
-                        <div class="md:col-span-2">
-                            <h3 class="text-lg font-bold text-brand-400 mb-4 border-l-4 border-brand-500 pl-3">没观过世界，哪来的世界观？</h3>
-                            <p class="text-slate-400 mb-4">足迹遍布多省，除知名景点外，更热衷于历史遗迹踏查：</p>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                                <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 hover:border-brand-500/50 transition">
-                                    <strong class="text-white block mb-2 text-base">北京</strong>
-                                    <span class="text-slate-400 text-xs leading-relaxed">金中都城墙遗址、明十三陵、晚清民国郊区村落考察。</span>
-                                </div>
-                                <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 hover:border-brand-500/50 transition">
-                                    <strong class="text-white block mb-2 text-base">山东 (泰安/青岛)</strong>
-                                    <span class="text-slate-400 text-xs leading-relaxed">岱庙碑刻、大汶口文化、青岛德国殖民要塞。</span>
-                                </div>
-                                <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 hover:border-brand-500/50 transition">
-                                    <strong class="text-white block mb-2 text-base">四川 (成都/广汉)</strong>
-                                    <span class="text-slate-400 text-xs leading-relaxed">三星堆、金沙遗址、前蜀皇帝王建墓、望丛祠。</span>
-                                </div>
-                                <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 hover:border-brand-500/50 transition">
-                                    <strong class="text-white block mb-2 text-base">江苏/河南</strong>
-                                    <span class="text-slate-400 text-xs leading-relaxed">徐州楚王陵、南京明孝陵、开封历代城墙叠压遗迹。</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 读书破万卷 -->
-                        <div class="md:col-span-2">
-                            <h3 class="text-lg font-bold text-brand-400 mb-4 border-l-4 border-brand-500 pl-3">所幸，我们还可以读书</h3>
-                            <details class="group bg-slate-800 rounded-xl border border-slate-700">
-                                <summary class="cursor-pointer p-4 font-medium text-white hover:text-brand-300 transition outline-none">
-                                    点击展开我的书单 (涵盖古文、通史、小说、学术等 11 大类)
-                                </summary>
-                                <div class="p-5 pt-2 text-slate-300 text-sm leading-relaxed space-y-3 border-t border-slate-700 mt-2 mx-2">
-                                    <p><strong>古文/通史：</strong> 历代经典古文选集、山海经、梦溪笔谈、陶庵梦忆、浮生六记、中国通史、全球通史...</p>
-                                    <p><strong>中国/国外历史：</strong> 乡土中国、万历15年、饥饿的盛世、置身事内、二手时间、纳粹帝国的腐败与反腐...</p>
-                                    <p><strong>文学/小说：</strong> 鲁迅作品集、我们仨、白银时代、百年孤独、月亮与六便士、瓦尔登湖、悉达多...</p>
-                                    <p><strong>日本专题：</strong> 菊与刀、战后日本经济史、雪国、解忧杂货店、人间值得...</p>
-                                    <p><strong>学术著作：</strong> 资本论、国富论、法治的细节、乌合之众、梦的解析、通向奴役之路...</p>
-                                    <p><strong>建筑与科普：</strong> 营造法式、海错图笔记、复杂、当我们谈论AI...</p>
-                                </div>
-                            </details>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 诗词创作 (融合于同一Tab内展示) -->
-                <div class="bg-[#fdfbf7] rounded-2xl shadow-sm border border-orange-100 p-8 text-center bg-opacity-80 relative" style="background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');">
-                    <div class="absolute top-4 left-4 text-orange-900/10"><i data-lucide="quote" class="w-12 h-12"></i></div>
-                    
-                    <h2 class="text-2xl font-serif font-bold text-slate-800 mb-8 flex items-center justify-center gap-2">
-                        <i data-lucide="feather" class="w-6 h-6 text-orange-800"></i>
-                        少年不知愁滋味，为赋新词强说愁
-                    </h2>
-                    
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8 text-slate-700 font-serif text-sm leading-loose">
-                        <div class="bg-white/50 p-4 rounded-lg border border-orange-50/50 hover:shadow-md transition">
-                            <h4 class="font-bold text-slate-900 mb-3 border-b border-orange-200 pb-2 inline-block">读史有感(一)</h4><br>
-                            半部史书概古今，世间几个能入心？<br>
-                            五车难抵铜山贵，四库不若金穴深。<br>
-                            莫笑前贤多迂阔，知往才可善耕耘。<br>
-                            掩卷重看千重浪，螺旋直上助新轮。
-                        </div>
-                        <div class="bg-white/50 p-4 rounded-lg border border-orange-50/50 hover:shadow-md transition">
-                            <h4 class="font-bold text-slate-900 mb-3 border-b border-orange-200 pb-2 inline-block">读史有感(二)</h4><br>
-                            雄主布衣登九天，子孙锦绣陷牢关。<br>
-                            从来贫贱磨英气，自古膏粱行路艰。<br>
-                            朱明一僧取天下，宗族十万丧江山。<br>
-                            兴替原本凭民意，岂有一家世代传？
-                        </div>
-                        <div class="bg-white/50 p-4 rounded-lg border border-orange-50/50 hover:shadow-md transition">
-                            <h4 class="font-bold text-slate-900 mb-3 border-b border-orange-200 pb-2 inline-block">读史有感(三)</h4><br>
-                            宰相观舞意正酣，一曲一绫反遭嫌。<br>
-                            满座公卿皆噤口，唯余弱女敢直言。<br>
-                            柔肩亦自有侠骨，讽谏不平独一篇。<br>
-                            胭风粉雪终消散，留得正气满人间。
-                        </div>
-                        <div class="bg-white/50 p-4 rounded-lg border border-orange-50/50 hover:shadow-md transition">
-                            <h4 class="font-bold text-slate-900 mb-3 border-b border-orange-200 pb-2 inline-block">咏雪</h4><br>
-                            暮有细雪意嫌轻，触身化水似雨行。<br>
-                            夜深更觉无声息，漫天盐粒四飘零。<br>
-                            笑指尘泥温未退，难留琼玉一枝停。<br>
-                            谁知朝来探窗去，天地白茫使人惊。
-                        </div>
-                    </div>
-
-                    <div class="mt-10 pt-8 border-t border-orange-200/50 max-w-lg mx-auto">
-                        <h3 class="text-lg font-bold text-slate-900 mb-4 tracking-widest flex justify-center items-center gap-2">
-                            <i data-lucide="heart" class="w-4 h-4 text-orange-600 fill-orange-600"></i> 特别：胜春风
-                        </h3>
-                        <div class="font-serif text-base text-orange-900 leading-loose italic bg-orange-50/50 p-6 rounded-xl border border-orange-100">
-                            曾嘲烈爱尽虚言，不信惊鸿乱管弦。<br>
-                            幸遇同心行远路，共凭肝胆御霜烟。<br>
-                            方知身是半轮月，补得圆光照大千。<br>
-                            若存疏拙祈宽宥，定胜春风越万山。
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 结尾寄语 -->
-                <footer class="mt-8 text-center pt-8">
-                    <p class="text-slate-500 font-serif italic mb-6">
-                        网页告一段落，但故事仍在书写。<br>
-                        “陆止于此，海始于斯”。勇敢的人啊，新的斗争开始了～
-                    </p>
-                    <div class="max-w-md mx-auto rounded-xl overflow-hidden shadow-md border border-slate-200">
-                        <img src="/mmexport1730478694900.jpg" alt="留言" class="w-full h-auto hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1455390582262-044cdead2708?q=80&w=600&auto=format&fit=crop'; this.alt='Ending Image';">
-                    </div>
-                </footer>
             </section>
 
         </main>
@@ -617,9 +569,9 @@
             }
         }
 
-        // 页面加载完成后，默认显示第一个 Tab (求学经历)
+        // 页面加载完成后，默认显示第一个 Tab (个人简介)
         document.addEventListener('DOMContentLoaded', () => {
-            switchTab('education');
+            switchTab('profile');
         });
     </script>
 </body>
