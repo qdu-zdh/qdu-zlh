@@ -62,7 +62,8 @@
 
 ### 方向四：生物群体动力学演进和调控方法
 
-[1] Taotao ZHAO, Zhijian JI, Yungang LIU, Lanhao ZHAO, Linrong TAN. Bio-Inspired Broadcast Herdability of Large-Scale Swarms: A Mean Field Game Approach. Submitted.
+[1] Taotao ZHAO, Zhijian JI, Yungang LIU, Lanhao ZHAO, Linrong TAN. Low-Dimensional Broadcast Herdability of Stochastic
+Swarms in Risky Environments. Submitted.
 
 
 ### 方向五：机器学习方法在构造显式控制律、显式李雅普诺夫函数等方面的应用
