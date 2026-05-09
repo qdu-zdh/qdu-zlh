@@ -90,23 +90,24 @@
                 <!-- 导航菜单 (核心修改区) -->
                 <nav class="mt-6 border-t lg:border-t-0 border-slate-100 pt-6 lg:pt-0">
                     <h3 class="font-semibold text-slate-400 uppercase tracking-wider text-xs mb-3 hidden lg:block">内容导航</h3>
-                    <div class="flex lg:flex-col overflow-x-auto lg:overflow-visible gap-2 pb-2 lg:pb-0 hide-scrollbar" id="nav-container">
-                        <!-- 按钮通过 JS 动态切换状态，顺序已调整 -->
-                        <button onclick="switchTab('profile')" id="nav-profile" class="nav-btn flex-shrink-0 flex items-center gap-3 w-full text-left px-4 py-3 rounded-xl transition border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
-                            <i data-lucide="user" class="w-5 h-5"></i>
-                            <span class="font-medium whitespace-nowrap">个人简介</span>
+                    <!-- 调整1：将这里的 flex 和横向滚动改为了网格布局 (grid)，保证所有按钮在手机端直接可见 -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 lg:flex lg:flex-col gap-2 pb-2 lg:pb-0" id="nav-container">
+                        <!-- 调整2：去掉横向排布属性，手机端居中对齐，调整边框为底部 (border-b-2) 以适应横向网格，PC端保持左侧边框 (lg:border-l-4) -->
+                        <button onclick="switchTab('profile')" id="nav-profile" class="nav-btn flex items-center justify-center lg:justify-start gap-2 w-full text-center lg:text-left px-3 py-2.5 rounded-xl transition border-b-2 lg:border-b-0 lg:border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
+                            <i data-lucide="user" class="w-4 h-4 lg:w-5 lg:h-5"></i>
+                            <span class="font-medium text-sm lg:text-base whitespace-nowrap">个人简介</span>
                         </button>
-                        <button onclick="switchTab('publications')" id="nav-publications" class="nav-btn flex-shrink-0 flex items-center gap-3 w-full text-left px-4 py-3 rounded-xl transition border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
-                            <i data-lucide="book-open" class="w-5 h-5"></i>
-                            <span class="font-medium whitespace-nowrap">论文与项目</span>
+                        <button onclick="switchTab('publications')" id="nav-publications" class="nav-btn flex items-center justify-center lg:justify-start gap-2 w-full text-center lg:text-left px-3 py-2.5 rounded-xl transition border-b-2 lg:border-b-0 lg:border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
+                            <i data-lucide="book-open" class="w-4 h-4 lg:w-5 lg:h-5"></i>
+                            <span class="font-medium text-sm lg:text-base whitespace-nowrap">论文与项目</span>
                         </button>
-                        <button onclick="switchTab('life')" id="nav-life" class="nav-btn flex-shrink-0 flex items-center gap-3 w-full text-left px-4 py-3 rounded-xl transition border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
-                            <i data-lucide="coffee" class="w-5 h-5"></i>
-                            <span class="font-medium whitespace-nowrap">生活与诗词</span>
+                        <button onclick="switchTab('life')" id="nav-life" class="nav-btn flex items-center justify-center lg:justify-start gap-2 w-full text-center lg:text-left px-3 py-2.5 rounded-xl transition border-b-2 lg:border-b-0 lg:border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
+                            <i data-lucide="coffee" class="w-4 h-4 lg:w-5 lg:h-5"></i>
+                            <span class="font-medium text-sm lg:text-base whitespace-nowrap">生活与诗词</span>
                         </button>
-                        <button onclick="switchTab('community')" id="nav-community" class="nav-btn flex-shrink-0 flex items-center gap-3 w-full text-left px-4 py-3 rounded-xl transition border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
-                            <i data-lucide="globe" class="w-5 h-5"></i>
-                            <span class="font-medium whitespace-nowrap">学术与科普</span>
+                        <button onclick="switchTab('community')" id="nav-community" class="nav-btn flex items-center justify-center lg:justify-start gap-2 w-full text-center lg:text-left px-3 py-2.5 rounded-xl transition border-b-2 lg:border-b-0 lg:border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
+                            <i data-lucide="globe" class="w-4 h-4 lg:w-5 lg:h-5"></i>
+                            <span class="font-medium text-sm lg:text-base whitespace-nowrap">学术与科普</span>
                         </button>
                     </div>
                 </nav>
@@ -149,7 +150,7 @@
                     </h2>
                     <div class="text-slate-700 leading-relaxed text-sm space-y-4">
                         <p>近年来，主要围绕<strong>复杂网络性能分析、多智能体系统控制理论、生物群体动力学以及机器学习控制</strong>等交叉领域展开研究。详见论文列表。</p>
-                        <p>在学术与社会服务方面，担任 <em>Aerospace Engineering Communications</em> 期刊编辑，长期为 <em>IEEE TCST</em>, <em>IEEE TASE</em>, <em>IEEE TMM</em> 等顶级期刊和SR\TIMC\JCD等刊物及IEEE CASE CSMC\CAC\CCDC国际学术会议担任同行评议审稿人。此外，积极投身学术共同体建设，担任中国自动化学会普及工作委员会委员等职务。</p>
+                        <p>在学术与社会服务方面，担任 <em>Aerospace Engineering Communications</em> 期刊编辑，长期为 IEEE TCST, IEEE TASE, IEEE TMM 等顶级期刊和SR\TIMC\JCD等刊物及IEEE CASE CSMC\CAC\CCDC国际学术会议担任同行评议审稿人。此外，积极投身学术共同体建设，担任中国自动化学会普及工作委员会委员等职务。</p>
                     </div>
                 </div>
 
@@ -192,6 +193,9 @@
                         <div class="flex flex-col gap-3">
                             <span class="inline-flex items-center gap-2 p-3 bg-yellow-50 text-yellow-800 text-sm rounded-lg font-medium border border-yellow-200 hover:shadow-sm transition"><i data-lucide="star" class="w-4 h-4"></i> 知乎自动控制话题优秀答主 (全网仅三位)</span>
                             <span class="inline-flex items-center gap-2 p-3 bg-blue-50 text-blue-800 text-sm rounded-lg font-medium border border-blue-200 hover:shadow-sm transition"><i data-lucide="zap" class="w-4 h-4"></i> 2025 AI百大创造者年度人物</span>
+                            <span class="inline-flex items-center gap-2 p-3 bg-green-50 text-green-800 text-sm rounded-lg font-medium border border-green-200 hover:shadow-sm transition"><i data-lucide="leaf" class="w-4 h-4"></i> 2024 科普中国科普新锐</span>
+                            <span class="inline-flex items-center gap-2 p-3 bg-slate-50 text-slate-700 text-sm rounded-lg font-medium border border-slate-200 hover:shadow-sm transition"><i data-lucide="medal" class="w-4 h-4 text-slate-400"></i> 强军杯全国一等奖 (2024)</span>
+                            <span class="inline-flex items-center gap-2 p-3 bg-slate-50 text-slate-700 text-sm rounded-lg font-medium border border-slate-200 hover:shadow-sm transition"><i data-lucide="medal" class="w-4 h-4 text-slate-400"></i> 美赛三等奖 / 国赛省级三等奖</span>
                         </div>
                     </div>
                 </div>
@@ -332,13 +336,15 @@
                     </div>
                 </div>
 
-                <!-- 寄语 -->
+                <!-- 结尾寄语 -->
                 <footer class="mt-8 text-center pt-8">
                     <p class="text-slate-500 font-serif italic mb-6">
+                        网页告一段落，但故事仍在书写。<br>
                         “陆止于此，海始于斯”。勇敢的人啊，新的斗争开始了～
                     </p>
                     <div class="max-w-md mx-auto rounded-xl overflow-hidden shadow-md border border-slate-200">
-                     </div>
+                        <img src="/mmexport1730478694900.jpg" alt="留言" class="w-full h-auto hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1455390582262-044cdead2708?q=80&w=600&auto=format&fit=crop'; this.alt='Ending Image';">
+                    </div>
                 </footer>
             </section>
 
