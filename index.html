@@ -146,6 +146,10 @@
                                 <span class="en">Outreach & Collab</span>
                             </span>
                         </button>
+                        <button onclick="switchTab('message')" id="nav-message" class="nav-btn sm:col-span-2 lg:col-span-1 flex items-center justify-center lg:justify-start gap-2 w-full text-center lg:text-left px-3 py-2.5 rounded-xl transition border-b-2 lg:border-b-0 lg:border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
+                            <i data-lucide="mail-open" class="w-4 h-4 lg:w-5 lg:h-5"></i>
+                            <span class="font-medium text-sm lg:text-base whitespace-nowrap">写给未来的你</span>
+                        </button>
                     </div>
                 </nav>
 
@@ -1003,6 +1007,58 @@
                 </footer>
             </section>
 
+             <!-- ================== 模块 6：写给未来学生/读者的话 ================== -->
+            <section id="section-message" class="content-section hidden space-y-8">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 md:p-10 relative overflow-hidden">
+                    <!-- 背景装饰 -->
+                    <div class="absolute -right-10 -bottom-10 text-brand-50 opacity-50 pointer-events-none">
+                        <i data-lucide="quote" class="w-64 h-64"></i>
+                    </div>
+
+                    <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3 relative z-10 pb-4 border-b border-slate-100">
+                        <div class="p-2 bg-brand-50 text-brand-600 rounded-lg"><i data-lucide="mail-heart" class="w-6 h-6"></i></div>
+                        写给未来
+                    </h2>
+
+                    <div class="relative z-10 space-y-8">
+                        <!-- 引言 -->
+                        <div class="font-serif text-lg text-slate-600 italic leading-relaxed text-center px-4 md:px-12">
+                            “如果你逛到了这里，说明我们在浩瀚的信息网络中，已经建立起了一种奇妙的‘拓扑连接’。”
+                        </div>
+
+                        <!-- 致未来的学生 -->
+                        <div class="bg-slate-50 rounded-2xl p-6 md:p-8 border border-slate-100 hover:border-brand-200 transition duration-300">
+                            <h3 class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
+                                <i data-lucide="graduation-cap" class="w-5 h-5 text-brand-500"></i> 致未来的同行者（学生）
+                            </h3>
+                            <div class="text-slate-700 text-sm leading-relaxed space-y-4">
+                                <p>在控制理论与多智能体系统的世界里，我们每天都在处理各种复杂的方程、探寻系统协同的边界。做科研，就像是在高维的未知空间中寻找最优解，你会不可避免地陷入局部极小值，面对推导的枯燥和代码的报错。</p>
+                                <p>这需要你具备“坐冷板凳”的耐心，和严谨扎实的数理逻辑。但除此之外，我更希望你是一个<strong class="text-brand-600">“鲜活”</strong>的人。</p>
+                                <p>当你科研受阻时，不妨去读读历史，去打一把游戏，或者去旅行。“没观过世界，哪来的世界观？”——一个具有广阔视野、深厚人文底蕴的学者，往往能在复杂系统中洞见别人看不到的灵感与生机。</p>
+                            </div>
+                        </div>
+
+                        <!-- 致偶然路过的读者 -->
+                        <div class="bg-slate-50 rounded-2xl p-6 md:p-8 border border-slate-100 hover:border-brand-200 transition duration-300">
+                            <h3 class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
+                                <i data-lucide="book-open" class="w-5 h-5 text-brand-500"></i> 致同频的游荡者（读者）
+                            </h3>
+                            <div class="text-slate-700 text-sm leading-relaxed space-y-4">
+                                <p>无论你是通过知乎的科普文章、在线的控制理论模拟器，还是因为某本共同喜欢的书、某款共同热爱的游戏循迹至此，我都对你的到来表示欢迎。</p>
+                                <p>这个“数字花园”不仅存放着我作为学者的冰冷数据与学术履历，更记录着一个普通人在对抗虚无、寻找存在意义过程中的“胡思乱想”。</p>
+                                <p>我们都是这个巨大复杂系统中的智能体。也许我们无法左右整体的宏观状态，但只要我们保持求知、保持热爱，“对着假的东西热泪盈眶”，个体之间这种微小却真实的思想共振，就是我们超越枯燥日常的最好方式。</p>
+                            </div>
+                        </div>
+
+                        <!-- 结语 -->
+                        <div class="pt-6 text-center">
+                            <p class="text-slate-800 font-medium mb-3">期待与你的交流与相遇。</p>
+                            <p class="text-slate-500 text-sm">无论是探讨最新的机器学习与集群理论，还是分享一首词、一本好书。</p>
+                            <a href="mailto:lugh56.2007@163.com" class="inline-flex items-center gap-2 mt-6 px-6 py-2.5 bg-brand-500 hover:bg-brand-600 text-white text-sm font-bold rounded-full transition shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                                <i data-lucide="send" class="w-4 h-4"></i> 给我写信
+                            </a>
+                        </div>
+                    </div>
         </main>
     </div>
 
