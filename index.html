@@ -87,25 +87,28 @@
                     “欢迎光临我的数字花园。 这里不仅有数学模型，也有关于历史、游戏与诗歌的温度。”
                 </div>
 
-                <!-- 导航菜单 (核心修改区) -->
+                <!-- 导航菜单 -->
                 <nav class="mt-6 border-t lg:border-t-0 border-slate-100 pt-6 lg:pt-0">
                     <h3 class="font-semibold text-slate-400 uppercase tracking-wider text-xs mb-3 hidden lg:block">内容导航</h3>
-                    <!-- 调整1：将这里的 flex 和横向滚动改为了网格布局 (grid)，保证所有按钮在手机端直接可见 -->
-                    <div class="grid grid-cols-2 sm:grid-cols-4 lg:flex lg:flex-col gap-2 pb-2 lg:pb-0" id="nav-container">
-                        <!-- 调整2：去掉横向排布属性，手机端居中对齐，调整边框为底部 (border-b-2) 以适应横向网格，PC端保持左侧边框 (lg:border-l-4) -->
+                    <div class="grid grid-cols-2 sm:flex sm:flex-wrap lg:flex-col gap-2 pb-2 lg:pb-0" id="nav-container">
                         <button onclick="switchTab('profile')" id="nav-profile" class="nav-btn flex items-center justify-center lg:justify-start gap-2 w-full text-center lg:text-left px-3 py-2.5 rounded-xl transition border-b-2 lg:border-b-0 lg:border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
                             <i data-lucide="user" class="w-4 h-4 lg:w-5 lg:h-5"></i>
                             <span class="font-medium text-sm lg:text-base whitespace-nowrap">个人简介</span>
                         </button>
+                        <!-- 新增：项目经历导航 -->
                         <button onclick="switchTab('publications')" id="nav-publications" class="nav-btn flex items-center justify-center lg:justify-start gap-2 w-full text-center lg:text-left px-3 py-2.5 rounded-xl transition border-b-2 lg:border-b-0 lg:border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
                             <i data-lucide="book-open" class="w-4 h-4 lg:w-5 lg:h-5"></i>
                             <span class="font-medium text-sm lg:text-base whitespace-nowrap">集群的秘密</span>
+                        </button>
+                        <button onclick="switchTab('projects')" id="nav-projects" class="nav-btn flex items-center justify-center lg:justify-start gap-2 w-full text-center lg:text-left px-3 py-2.5 rounded-xl transition border-b-2 lg:border-b-0 lg:border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
+                            <i data-lucide="layers" class="w-4 h-4 lg:w-5 lg:h-5"></i>
+                            <span class="font-medium text-sm lg:text-base whitespace-nowrap">项目经历</span>
                         </button>
                         <button onclick="switchTab('life')" id="nav-life" class="nav-btn flex items-center justify-center lg:justify-start gap-2 w-full text-center lg:text-left px-3 py-2.5 rounded-xl transition border-b-2 lg:border-b-0 lg:border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
                             <i data-lucide="coffee" class="w-4 h-4 lg:w-5 lg:h-5"></i>
                             <span class="font-medium text-sm lg:text-base whitespace-nowrap">生活与诗词</span>
                         </button>
-                        <button onclick="switchTab('community')" id="nav-community" class="nav-btn flex items-center justify-center lg:justify-start gap-2 w-full text-center lg:text-left px-3 py-2.5 rounded-xl transition border-b-2 lg:border-b-0 lg:border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
+                        <button onclick="switchTab('community')" id="nav-community" class="nav-btn sm:col-span-2 lg:col-span-1 flex items-center justify-center lg:justify-start gap-2 w-full text-center lg:text-left px-3 py-2.5 rounded-xl transition border-b-2 lg:border-b-0 lg:border-l-4 border-transparent text-slate-600 hover:bg-slate-50">
                             <i data-lucide="globe" class="w-4 h-4 lg:w-5 lg:h-5"></i>
                             <span class="font-medium text-sm lg:text-base whitespace-nowrap">科学普及和在线工具</span>
                         </button>
@@ -142,7 +145,7 @@
                     “欢迎光临我的数字花园。 这里不仅有数学模型，也有关于历史、游戏与诗歌的温度。”
                 </div>
 
-                <!-- 学术概览与社会服务 (核心前置并合并) -->
+                <!-- 学术概览与社会服务 -->
                 <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
                     <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3 pb-4 border-b border-slate-100">
                         <div class="p-2 bg-brand-50 text-brand-600 rounded-lg"><i data-lucide="file-text" class="w-6 h-6"></i></div>
@@ -156,8 +159,7 @@
 
                 <!-- 求学经历 & 荣誉奖项 -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    
-                    <!-- 求学经历 (弱化为小块) -->
+                    <!-- 求学经历 -->
                     <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
                         <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3 pb-4 border-b border-slate-100">
                             <div class="p-2 bg-brand-50 text-brand-600 rounded-lg"><i data-lucide="graduation-cap" class="w-5 h-5"></i></div>
@@ -198,7 +200,259 @@
                 </div>
             </section>
 
-            <!-- ================== 模块 2：生活视界 & 诗词 ================== -->
+
+            <!-- ================== 模块：项目经历（新增单列） ================== -->
+            <section id="section-projects" class="content-section hidden space-y-8">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3 pb-4 border-b border-slate-100">
+                        <div class="p-2 bg-brand-50 text-brand-600 rounded-lg"><i data-lucide="layers" class="w-6 h-6"></i></div>
+                        参与科研项目
+                    </h2>
+                    
+                    <div class="space-y-6">
+                        <!-- 项目 1 -->
+                        <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 hover:shadow-md hover:border-brand-200 transition">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2 gap-2">
+                                <h3 class="font-bold text-slate-900 text-lg">智能密码锁的安全性优化</h3>
+                                <span class="inline-block px-3 py-1 bg-brand-100 text-brand-700 text-xs font-bold rounded w-fit">主持</span>
+                            </div>
+                            <p class="text-slate-500 text-sm mb-4 font-medium"><i data-lucide="tag" class="w-4 h-4 inline-block mr-1 align-text-bottom"></i>泰安市大学生科技创新行动计划B类项目</p>
+                            <!-- 补充文字介绍区 -->
+                            <div class="p-4 border-2 border-dashed border-slate-300 rounded-lg bg-white text-slate-400 text-sm">
+                                <p class="italic"><i data-lucide="edit-3" class="w-4 h-4 inline-block mr-1"></i> [请在此处补充：项目的具体背景、承担的核心工作、突破的技术难点及最终产出成果...]</p>
+                            </div>
+                        </div>
+
+                        <!-- 项目 2 -->
+                        <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 hover:shadow-md hover:border-brand-200 transition">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2 gap-2">
+                                <h3 class="font-bold text-slate-900 text-lg">多智能体系统基于结构分解的分析与控制</h3>
+                                <span class="inline-block px-3 py-1 bg-slate-200 text-slate-700 text-xs font-bold rounded w-fit">参与</span>
+                            </div>
+                            <p class="text-slate-500 text-sm mb-4 font-medium"><i data-lucide="tag" class="w-4 h-4 inline-block mr-1 align-text-bottom"></i>国家自然科学基金面上资助项目 (61873136)</p>
+                            <!-- 补充文字介绍区 -->
+                            <div class="p-4 border-2 border-dashed border-slate-300 rounded-lg bg-white text-slate-400 text-sm">
+                                <p class="italic"><i data-lucide="edit-3" class="w-4 h-4 inline-block mr-1"></i> [请在此处补充：项目的具体背景、承担的核心工作、突破的技术难点及最终产出成果...]</p>
+                            </div>
+                        </div>
+
+                        <!-- 项目 3 -->
+                        <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 hover:shadow-md hover:border-brand-200 transition">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2 gap-2">
+                                <h3 class="font-bold text-slate-900 text-lg">高性能协同控制核心理论与关键技术</h3>
+                                <span class="inline-block px-3 py-1 bg-slate-200 text-slate-700 text-xs font-bold rounded w-fit">参与</span>
+                            </div>
+                            <p class="text-slate-500 text-sm mb-4 font-medium"><i data-lucide="tag" class="w-4 h-4 inline-block mr-1 align-text-bottom"></i>国家自然科学基金重点资助项目 (62033007)</p>
+                            <!-- 补充文字介绍区 -->
+                            <div class="p-4 border-2 border-dashed border-slate-300 rounded-lg bg-white text-slate-400 text-sm">
+                                <p class="italic"><i data-lucide="edit-3" class="w-4 h-4 inline-block mr-1"></i> [请在此处补充：项目的具体背景、承担的核心工作、突破的技术难点及最终产出成果...]</p>
+                            </div>
+                        </div>
+
+                        <!-- 项目 4 -->
+                        <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 hover:shadow-md hover:border-brand-200 transition">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2 gap-2">
+                                <h3 class="font-bold text-slate-900 text-lg">异构多智能体系统的分散化设计</h3>
+                                <span class="inline-block px-3 py-1 bg-slate-200 text-slate-700 text-xs font-bold rounded w-fit">参与</span>
+                            </div>
+                            <p class="text-slate-500 text-sm mb-4 font-medium"><i data-lucide="tag" class="w-4 h-4 inline-block mr-1 align-text-bottom"></i>北京市自然科学基金面上项目 (4232041)</p>
+                            <!-- 补充文字介绍区 -->
+                            <div class="p-4 border-2 border-dashed border-slate-300 rounded-lg bg-white text-slate-400 text-sm">
+                                <p class="italic"><i data-lucide="edit-3" class="w-4 h-4 inline-block mr-1"></i> [请在此处补充：项目的具体背景、承担的核心工作、突破的技术难点及最终产出成果...]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ================== 模块 4：论文介绍 (调整统一排版) ================== -->
+            <section id="section-publications" class="content-section hidden space-y-8">
+                
+                <!-- 新增：方法论提纲挈领介绍 -->
+                <div class="bg-gradient-to-br from-brand-50/80 to-white rounded-2xl shadow-sm border border-brand-100 p-8 relative overflow-hidden">
+                    <div class="absolute -right-6 -top-6 text-brand-100 opacity-40"><i data-lucide="network" class="w-32 h-32"></i></div>
+                    <h2 class="text-xl font-bold text-brand-900 mb-4 flex items-center gap-3 relative z-10">
+                        <div class="p-2 bg-white text-brand-600 rounded-lg shadow-sm"><i data-lucide="compass" class="w-5 h-5"></i></div>
+                        研究思路与总体方法论
+                    </h2>
+                    <div class="text-slate-700 leading-relaxed text-sm space-y-3 relative z-10">
+                        <p>我的研究聚焦复杂群体系统的演化机理与协同操控，遵循“现象解析、协议设计、范式拓新、仿生观测”的闭环逻辑。研究从拓展复杂网络约束下的系统底层性能解析出发，构建多智能体统一协同控制框架，并将其应用到了编队等工程场景；面对传统数理方法的局限，引入数据驱动与博弈机制探索群体的柔性引导新范式；结合生物学机制开发高保真仿真环境，使其兼顾理论验证与自然群集“生物观察器”的双重功能，致力于打通从纯粹数学抽象到真实物理现象的系统性研究脉络。</p>
+                    </div>
+                </div>
+
+                <!-- 出版物详细列表 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3 pb-4 border-b border-slate-100">
+                        <div class="p-2 bg-brand-50 text-brand-600 rounded-lg"><i data-lucide="book-open" class="w-6 h-6"></i></div>
+                        学术论文详细列表
+                    </h2>
+                    
+                    <div class="space-y-8">
+                        
+                        <!-- 方向一 -->
+                        <div class="border border-slate-100 rounded-xl bg-slate-50 overflow-hidden">
+                            <h3 class="text-lg font-bold text-slate-800 p-5 bg-white border-b border-slate-100 flex items-center gap-3">
+                                <span class="w-1.5 h-5 bg-brand-500 rounded-full"></span> 复杂网络性能分析方法
+                            </h3>
+                            <div class="p-5">
+                                <div class="text-slate-700 leading-relaxed text-sm space-y-3 mb-6 bg-white p-4 rounded-lg border border-slate-100">
+                                    <p>对于群体系统，我们首先注意到的是其客观现象和性能，这一部分工作所从事的即性能分析方法的讨论和拓展。从调控的视角来看，我们所关心的性能在于其可控性和可观性，具体来说，特定的网络结构往往带来特定的性质，这些性质又进一步助力对系统性能的快速判断，等价划分即是此类。</p>
+                                    <p>等价划分所带来的不可控和不可观的性质，在复杂网络性能分析中起到了快速判断的作用，但之前的工作往往基于极其理想的网络条件所提出，无论是定义和相应的分析方法是否能够继续成立仍然是未知的。我们开展了如下研究：</p>
+                                    <p>分别讨论了时滞场景，异构场景、切换场景、矩阵权重场景、一般线性系统场景、结构可控性、强结构可控性等问题，提出了多种形式的等价划分的新定义，指出早期分析方法在判断复杂系统时需要考虑的一些假设，为基本图论工具在分析复杂的网络场景下的适配提供了系统性参考。</p>       
+                                </div>
+                                <h4 class="text-sm font-bold text-slate-800 mb-4 flex items-center gap-2">
+                                    <i data-lucide="file-check" class="w-4 h-4 text-brand-600"></i> 具体工作
+                                </h4>
+                                <ul class="space-y-3 text-sm text-slate-600 leading-relaxed">
+                                    <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-slate-300 before:rounded-full hover:before:bg-brand-500 transition-all">
+                                        [1] <strong>Zhao lanhao</strong>, Ji Zhijian, Liu Yungang, Lin Chong. Controllability of General Linear Discrete Multiagent Systems with Directed and Weighted Signed Network. <em>J Syst Sci Complex</em> (2022). 
+                                        <span class="inline-block ml-1 px-1.5 py-0.5 bg-blue-50 text-blue-700 rounded text-xs">SCI JCR Q1</span>
+                                    </li>
+                                    <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-slate-300 before:rounded-full hover:before:bg-brand-500 transition-all">
+                                        [2] <strong>赵兰浩</strong>, 纪志坚. 符号网络条件下扩散耦合多智能体系统的可控性分析[J]. <em>系统科学与数学</em>, 2021, 41(06):1455-1466.
+                                    </li>
+                                    <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-slate-300 before:rounded-full hover:before:bg-brand-500 transition-all">
+                                        [3] <strong>Zhao lanhao</strong>. Estimation of Strong Structural Controllable Subspace of Network: Equitable Partition Method. <a href="https://doi.org/10.48550/arXiv.2204.11483" class="text-brand-600 hover:underline">arXiv.2204.11483</a>
+                                    </li>
+                                    <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-slate-300 before:rounded-full hover:before:bg-brand-500 transition-all">
+                                        [4] <strong>Zhao lanhao</strong>, Ji Zhijian, Liu Yungang, Lin Chong. Controllability and observability of linear multi-agent systems over matrix-weighted signed networks. <a href="https://doi.org/10.48550/arXiv.2204.00995" class="text-brand-600 hover:underline">arXiv.2204.00995</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 方向二 -->
+                        <div class="border border-slate-100 rounded-xl bg-slate-50 overflow-hidden">
+                            <h3 class="text-lg font-bold text-slate-800 p-5 bg-white border-b border-slate-100 flex items-center gap-3">
+                                <span class="w-1.5 h-5 bg-brand-500 rounded-full"></span> 多智能体系统控制基本理论
+                            </h3>
+                            <div class="p-5">
+                                <div class="text-slate-700 leading-relaxed text-sm space-y-3 mb-6 bg-white p-4 rounded-lg border border-slate-100">
+                                    <p>拥有了系统性能分析做基础,我们进一步关注其调控问题，抽象成多智能体问题来说，即一般系统的控制协议设计问题。</p>
+                                    <p>进一步又可以分成几个子问题，一、不同类型的控制问题如何设计协议。二、所设计的协议是否一定可以实现目标（总是可以求出可用的参数，而不是求出参数才可以用）。三是相比于其他协议有什么好处，我们开展了如下研究：</p>
+                                    <p>提出了一致性、部分一致性、输出一致性的统一分析框架、提出了系统可一致性新的分析方法，与上述性能分析方法实现了配套，从使用信息的视角提出了多种新型控制协议。</p>       
+                                </div>
+                                <h4 class="text-sm font-bold text-slate-800 mb-4 flex items-center gap-2">
+                                    <i data-lucide="file-check" class="w-4 h-4 text-brand-600"></i> 具体工作
+                                </h4>
+                                <ul class="space-y-3 text-sm text-slate-600 leading-relaxed">
+                                    <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-slate-300 before:rounded-full hover:before:bg-brand-500 transition-all">
+                                        [1] Chen Yangzhou, <strong>Zhao lanhao</strong>. Partial state consensus and output consensus in heterogeneous multi-agent systems. <em>J Syst Sci Complex</em> (2026).
+                                        <span class="inline-block ml-1 px-1.5 py-0.5 bg-blue-50 text-blue-700 rounded text-xs">SCI JCR Q1</span>
+                                    </li>
+                                    <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-slate-300 before:rounded-full hover:before:bg-brand-500 transition-all">
+                                        [2] Chen Yangzhou, <strong>Zhao lanhao</strong> et al. Consensus of heterogeneous multi-agent systems: linear transformation decentralized output feedback method. <em>Automatica, Major Revision</em>.
+                                    </li>
+                                    <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-slate-300 before:rounded-full hover:before:bg-brand-500 transition-all">
+                                        [3] Chen Yangzhou, <strong>Zhao lanhao</strong>. Consensus of heterogeneous multi agent systems: A method based on basic edge state feedback and overlapping decomposition.
+                                    </li>
+                                    <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-slate-300 before:rounded-full hover:before:bg-brand-500 transition-all">
+                                        [4] <strong>Zhao lanhao</strong>, Chen Yangzhou. Partial state consensus and output consensus in heterogeneous multi-agent systems: A method based on DETC.
+                                    </li>
+                                    <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-slate-300 before:rounded-full hover:before:bg-brand-500 transition-all">
+                                        [5] <strong>Zhao lanhao</strong>, Chen Yangzhou. Decentralized design of leader-following consensus protocols for heterogeneous multiagent systems with asymmetric weight matrix. <em>CISC.2024</em>
+                                    </li>
+                                    <li class="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-slate-300 before:rounded-full hover:before:bg-brand-500 transition-all">
+                                        [6] Chen Yangzhou, <strong>Zhao lanhao</strong>. Decentralized design of consensus protocols with minimal communication links based on directed spanning tree. <em>CCDC 2023</em>.
+                                        <span class="inline-block ml-1 px-1.5 py-0.5 bg-orange-50 text-orange-700 rounded text-xs">CAA A类会议</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 其它四个方向整合 (采用紧凑型统一卡片) -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            
+                            <!-- 方向三 -->
+                            <div class="border border-slate-100 rounded-xl bg-slate-50 overflow-hidden flex flex-col">
+                                <h3 class="text-md font-bold text-slate-800 p-4 bg-white border-b border-slate-100 flex items-center gap-2">
+                                    <span class="w-1.5 h-4 bg-brand-500 rounded-full"></span> 复杂场景下跟踪与编队
+                                </h3>
+                                <div class="p-4 flex-1 flex flex-col">
+                                    <div class="text-slate-700 leading-relaxed text-sm mb-4">
+                                        <p>进一步，我们将一致性问题讨论拓展到编队问题，考虑了多种复杂场景下的编队问题</p>
+                                    </div>
+                                    <h4 class="text-sm font-bold text-slate-800 mb-3 flex items-center gap-2">
+                                        <i data-lucide="file-check" class="w-4 h-4 text-brand-600"></i> 具体工作
+                                    </h4>
+                                    <ul class="space-y-2 text-sm text-slate-600">
+                                        <li class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1 before:h-1 before:bg-slate-400 before:rounded-full">
+                                            [1] Guangxin Guo, <strong>Lanhao Zhao</strong>. Barrier function-based Preset-Time Bipartite Consensus for Nonlinear Multi-agent Systems under Disturbance: A Time-Varying Function Approach <em>Submitted</em>.
+                                        </li>
+                                        <li class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1 before:h-1 before:bg-slate-400 before:rounded-full">
+                                            [2] Guangxin Guo, <strong>Lanhao Zhao</strong>. Adaptive Super-Twisting Bipartite Consensus of Multiple Underwater Vehicles： A Barrier Function and Event-triggered Hybrid Approach <em>Submitted</em>.
+                                        </li>
+                                        <li class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1 before:h-1 before:bg-slate-400 before:rounded-full">
+                                            [3] 赵涛涛，<strong>赵兰浩</strong> 基于分层博弈的二阶多智能体系统分组编队. <em>在审</em>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- 方向四 -->
+                            <div class="border border-slate-100 rounded-xl bg-slate-50 overflow-hidden flex flex-col">
+                                <h3 class="text-md font-bold text-slate-800 p-4 bg-white border-b border-slate-100 flex items-center gap-2">
+                                    <span class="w-1.5 h-4 bg-brand-500 rounded-full"></span> 机器学习与群体驱动
+                                </h3>
+                                <div class="p-4 flex-1 flex flex-col">
+                                    <div class="text-slate-700 leading-relaxed text-sm space-y-2 mb-4">
+                                        <p>经过多年技术迭代和发展，目前，研究者们意识到有些问题已经非传统数理方法所能及，寻找新型的驱动策略、寻找辅助性的稳定性判定方法，寻找基于数据的操控方法，成为2025年之后的研究热点和宏大拼图的一部分，基于这个目的，开展下列讨论</p>
+                                        <p>讨论了如何通过现代机器学习方法辅助寻找李雅普诺夫函数，和如何利用博弈等方法，实现对群体的引导性驱动，而非精准控制</p>
+                                    </div>
+                                    <h4 class="text-sm font-bold text-slate-800 mb-3 flex items-center gap-2">
+                                        <i data-lucide="file-check" class="w-4 h-4 text-brand-600"></i> 具体工作
+                                    </h4>
+                                    <ul class="space-y-2 text-sm text-slate-600">
+                                        <li class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1 before:h-1 before:bg-slate-400 before:rounded-full">
+                                            [1] <strong>Zhao lanhao</strong>. Machine Learning for Lyapunov Function Synthesis. <a href="#" class="text-brand-600 hover:underline">RG. DOI</a>
+                                        </li>
+                                        <li class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1 before:h-1 before:bg-slate-400 before:rounded-full">
+                                            [2] Taotao ZHAO... <strong>Lanhao ZHAO</strong>Low-Dimensional Broadcast Herdability of Stochastic Swarms in Risky Environments <em>Submitted</em>.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- 方向五 -->
+                            <div class="border border-slate-100 rounded-xl bg-slate-50 overflow-hidden flex flex-col">
+                                <h3 class="text-md font-bold text-slate-800 p-4 bg-white border-b border-slate-100 flex items-center gap-2">
+                                    <span class="w-1.5 h-4 bg-brand-500 rounded-full"></span> 生物启发
+                                </h3>
+                                <div class="p-4 flex-1">
+                                    <div class="text-slate-700 leading-relaxed text-sm mb-4">
+                                        <p>遗憾的是，迄今为止最为精密的群体系统往往来自于自然界，包括人类社区，做群体分析与控制，不知道自然界的样子是十分危险的，而时时刻刻观察一个自然系统又并非容易的事情，因此，结合生物学研究，开发一个接近真实情况的仿真界面是必须的，这里我们基于近年来生物学研究的标志性工作，主导开发：<a href="https://qdu-zdh.github.io/fishschooling/" class="text-brand-600 hover:underline font-semibold" target="_blank">鱼群动力学模拟器</a>。为群体研究提供较为真实的工具。</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 方向六 -->
+                            <div class="border border-slate-100 rounded-xl bg-slate-50 overflow-hidden flex flex-col">
+                                <h3 class="text-md font-bold text-slate-800 p-4 bg-white border-b border-slate-100 flex items-center gap-2">
+                                    <span class="w-1.5 h-4 bg-brand-500 rounded-full"></span> 其他工作（练手记录）
+                                </h3>
+                                <div class="p-4 flex-1">
+                                    <ul class="space-y-3 text-sm text-slate-600">
+                                        <li class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1 before:h-1 before:bg-slate-400 before:rounded-full">
+                                            [1] 短波通信技术发展综述 (被引前10%)
+                                        </li>
+                                        <li class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1 before:h-1 before:bg-slate-400 before:rounded-full">
+                                            [2] 具有视力保护功能的智能台灯设计
+                                        </li>
+                                        <li class="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1 before:h-1 before:bg-slate-400 before:rounded-full">
+                                            [3] 基于安全性优化的密码锁设计
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ================== 模块：生活视界 & 诗词 (未修改内容) ================== -->
             <section id="section-life" class="content-section hidden space-y-8">
                 <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 relative overflow-hidden">
                     <!-- 装饰背景 -->
@@ -283,7 +537,7 @@
                     </div>
                 </div>
 
-  <!-- 诗词创作 -->
+                <!-- 诗词创作 -->
                 <div class="bg-white rounded-3xl shadow-sm border border-slate-200/60 p-6 sm:p-10 text-center relative smooth-card hover:shadow-md">
                     <div class="absolute top-6 left-6 text-slate-100/50"><i data-lucide="feather" class="w-20 h-20"></i></div>
                     
@@ -348,7 +602,7 @@
                     </div>
                 </div>
 
-      <!-- 寄语 -->
+                <!-- 寄语 -->
                 <footer class="mt-8 text-center pt-8">
                     <p class="text-slate-500 font-serif italic mb-6">
                         “陆止于此，海始于斯”。勇敢的人啊，新的斗争开始了～
@@ -359,7 +613,7 @@
                 </footer>
             </section>
 
-            <!-- ================== 模块 3：学术与科普 ================== -->
+            <!-- ================== 模块 5：学术与科普 (调整三块并排布局) ================== -->
             <section id="section-community" class="content-section hidden space-y-8">
                 
                 <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
@@ -368,28 +622,37 @@
                         科学普及与影响力
                     </h2>
                     
-                    <div class="bg-brand-50 text-brand-900 p-5 rounded-xl text-sm leading-relaxed mb-6 border border-brand-100 shadow-inner">
+                    <div class="bg-brand-50 text-brand-900 p-5 rounded-xl text-sm leading-relaxed mb-8 border border-brand-100 shadow-inner">
                         以“系统与控制”为名于知乎、微信公众号等平台累计发布内容2000余条，汇聚全球70余个国家/地区7万名关注者，总阅读及播放量<strong class="text-brand-600 text-base mx-1">逾一千万次</strong>。与国际自动控制联合会建立合作，作品多次被官方转载。
                     </div>
                     
-                    <div class="flex flex-col md:flex-row gap-6 text-sm text-slate-700">
-                        <div class="flex-1 bg-slate-50 p-5 rounded-xl border border-slate-100 flex items-start gap-3">
-                            <i data-lucide="feather" class="w-5 h-5 text-brand-500 mt-0.5"></i>
-                            <div>
-                                <h4 class="font-bold text-slate-900 mb-1">科普创作与翻译</h4>
-                                <p class="text-slate-600">发表多篇《中国自动化学会通讯》等学术通讯的科普翻译与原创文章，致力于控制理论的前沿普及。</p>
+                    <!-- 优化布局：改为等宽的三列栅格 -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-slate-700">
+                        <!-- 1. 科普 -->
+                        <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 flex flex-col gap-3 hover:shadow-md hover:border-brand-200 transition">
+                            <div class="flex items-center gap-2 mb-1">
+                                <div class="p-2 bg-blue-50 text-blue-500 rounded-lg"><i data-lucide="feather" class="w-5 h-5"></i></div>
+                                <h4 class="font-bold text-slate-900 text-base">科普创作与翻译</h4>
                             </div>
-                             <div>
-                                <h4 class="text-md font-bold text-slate-800 mb-3 flex items-center gap-2">教材参编</h4>
-                                <p class="text-sm text-slate-600 pl-3 border-l-2 border-slate-200">[1] 《自动化学科导论》，副主编，中国地质大学出版社</p>
-                            </div>
+                            <p class="text-slate-600 flex-1 leading-relaxed">发表多篇《中国自动化学会通讯》等学术通讯的科普翻译与原创文章，致力于控制理论的前沿普及。</p>
                         </div>
-                        <div class="flex-1 bg-slate-50 p-5 rounded-xl border border-slate-100 flex items-start gap-3">
-                            <i data-lucide="monitor-play" class="w-5 h-5 text-brand-500 mt-0.5"></i>
-                            <div>
-                                <h4 class="font-bold text-slate-900 mb-1">在线工具开发</h4>
-                                <p class="text-slate-600">主导开发：<a href="https://cool-koala.github.io/Control-Theory-Simulator/" class="text-brand-600 hover:underline font-semibold" target="_blank">百种控制理论在线模拟器</a>。为初学者提供直观的学习工具，已获千次收藏。</p>
+                        
+                        <!-- 2. 教材 -->
+                        <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 flex flex-col gap-3 hover:shadow-md hover:border-brand-200 transition">
+                            <div class="flex items-center gap-2 mb-1">
+                                <div class="p-2 bg-emerald-50 text-emerald-500 rounded-lg"><i data-lucide="book" class="w-5 h-5"></i></div>
+                                <h4 class="font-bold text-slate-900 text-base">教材参编</h4>
                             </div>
+                            <p class="text-slate-600 flex-1 leading-relaxed">[1] 《自动化学科导论》，副主编，中国地质大学出版社</p>
+                        </div>
+                        
+                        <!-- 3. 工具 -->
+                        <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 flex flex-col gap-3 hover:shadow-md hover:border-brand-200 transition">
+                            <div class="flex items-center gap-2 mb-1">
+                                <div class="p-2 bg-purple-50 text-purple-500 rounded-lg"><i data-lucide="monitor-play" class="w-5 h-5"></i></div>
+                                <h4 class="font-bold text-slate-900 text-base">在线工具开发</h4>
+                            </div>
+                            <p class="text-slate-600 flex-1 leading-relaxed">主导开发：<a href="https://cool-koala.github.io/Control-Theory-Simulator/" class="text-brand-600 hover:underline font-semibold" target="_blank">百种控制理论在线模拟器</a>。为初学者提供直观的学习工具，已获千次收藏。</p>
                         </div>
                     </div>
                 </div>
@@ -413,7 +676,8 @@
                         <span class="px-3 py-1.5 bg-white text-slate-700 text-sm rounded-md border border-slate-200 hover:border-brand-300 hover:text-brand-600 transition cursor-default">芬发自动化</span>
                     </div>
                 </div>
-  <!-- 地图 -->
+
+                <!-- 地图 -->
                 <footer class="mt-8 text-center pt-8">
                     <p class="text-slate-500 font-serif italic mb-6">
                         “陆止于此，海始于斯”
@@ -422,157 +686,6 @@
                         <img src="Screenshot_20241102_004204_com_android_chrome_ChromeTabbedActivity.jpg" alt="范围图" class="w-full h-auto hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1455390582262-044cdead2708?q=80&w=600&auto=format&fit=crop'; this.alt='Ending Image';">
                     </div>
                 </footer>
-            </section>
-
-            <!-- ================== 模块 4：论文与项目 ================== -->
-            <section id="section-publications" class="content-section hidden space-y-8">
-                
-                <!-- 参与科研项目 (移至论文列表前作为背景支撑) -->
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
-                    <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3 pb-4 border-b border-slate-100">
-                        <div class="p-2 bg-brand-50 text-brand-600 rounded-lg"><i data-lucide="layers" class="w-5 h-5"></i></div>
-                        参与科研项目
-                    </h2>
-                    <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4 text-sm text-slate-700">
-                        <li class="bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md hover:border-brand-200 transition">
-                            <span class="font-bold block text-slate-900 mb-1">智能密码锁的安全性优化</span>
-                            <span class="text-slate-500 text-xs">泰安市大学生科技创新行动计划B类项目 · 主持</span>
-                        </li>
-                        <li class="bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md hover:border-brand-200 transition">
-                            <span class="font-bold block text-slate-900 mb-1">多智能体系统基于结构分解的分析与控制</span>
-                            <span class="text-slate-500 text-xs">国家自然科学基金面上资助项目 (61873136) · 参与</span>
-                        </li>
-                        <li class="bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md hover:border-brand-200 transition">
-                            <span class="font-bold block text-slate-900 mb-1">高性能协同控制核心理论与关键技术</span>
-                            <span class="text-slate-500 text-xs">国家自然科学基金重点资助项目 (62033007) · 参与</span>
-                        </li>
-                        <li class="bg-slate-50 p-4 rounded-xl border border-slate-100 hover:shadow-md hover:border-brand-200 transition">
-                            <span class="font-bold block text-slate-900 mb-1">异构多智能体系统的分散化设计</span>
-                            <span class="text-slate-500 text-xs">北京市自然科学基金面上项目 (4232041) · 参与</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- 出版物详细列表 -->
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
-                    <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3 pb-4 border-b border-slate-100">
-                        <div class="p-2 bg-brand-50 text-brand-600 rounded-lg"><i data-lucide="book-open" class="w-6 h-6"></i></div>
-                        学术论文详细列表
-                    </h2>
-                    
-                    <div class="space-y-8">
-                        <!-- 方向一 -->
-                        <div>
-                            <h3 class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
-                                <span class="w-1.5 h-5 bg-brand-500 rounded-full"></span> 复杂网络性能分析方法
-                            </h3>
-                            <div class="text-slate-700 leading-relaxed text-sm space-y-4">
-                        <p>对于群体系统，我们首先注意到的是其客观现象和性能，这一部分工作所从事的即性能分析方法的讨论和拓展。从调控的视角来看，我们所关心的性能在于其可控性和可观性，具体来说，特定的网络结构往往带来特定的性质，这些性质又进一步助力对系统性能的快速判断，等价划分即是此类。</p>
-                        <p>等价划分所带来的不可控和不可观的性质，在复杂网络性能分析中起到了快速判断的作用，但之前的工作往往基于极其理想的网络条件所提出，无论是定义和相应的分析方法是否能够继续成立仍然是未知的。我们开展了如下研究：</p>
-                         <p>分别讨论了时滞场景，异构场景、切换场景、矩阵权重场景、一般线性系统场景、结构可控性、强结构可控性等问题，提出了多种形式的等价划分的新定义，指出早期分析方法在判断复杂系统时需要考虑的一些假设，为基本图论工具在分析复杂的网络场景下的适配提供了系统性参考。</p>      
-                            </div>
-                        <h4 class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
-                                <span class="w-1.5 h-5 bg-brand-500 rounded-full"></span> 具体工作
-                        </h4>
-                            <ul class="space-y-4 text-sm text-slate-600 leading-relaxed">
-                                <li class="pl-4 border-l-2 border-slate-200 hover:border-brand-400 transition">
-                                    [1] <strong>Zhao lanhao</strong>, Ji Zhijian, Liu Yungang, Lin Chong. Controllability of General Linear Discrete Multiagent Systems with Directed and Weighted Signed Network. <em>J Syst Sci Complex</em> (2022). 
-                                    <span class="inline-block mt-1 px-2 py-0.5 bg-blue-50 text-blue-700 rounded text-xs">SCI JCR Q1</span>
-                                </li>
-                                <li class="pl-4 border-l-2 border-slate-200 hover:border-brand-400 transition">
-                                    [2] <strong>赵兰浩</strong>, 纪志坚. 符号网络条件下扩散耦合多智能体系统的可控性分析[J]. <em>系统科学与数学</em>, 2021, 41(06):1455-1466.
-                                    </li>
-                                <li class="pl-4 border-l-2 border-slate-200 hover:border-brand-400 transition">
-                                    [3] <strong>Zhao lanhao</strong>. Estimation of Strong Structural Controllable Subspace of Network: Equitable Partition Method. <a href="https://doi.org/10.48550/arXiv.2204.11483" class="text-brand-600 hover:underline">arXiv.2204.11483</a>
-                                </li>
-                                <li class="pl-4 border-l-2 border-slate-200 hover:border-brand-400 transition">
-                                    [4] <strong>Zhao lanhao</strong>, Ji Zhijian, Liu Yungang, Lin Chong. Controllability and observability of linear multi-agent systems over matrix-weighted signed networks. <a href="https://doi.org/10.48550/arXiv.2204.00995" class="text-brand-600 hover:underline">arXiv.2204.00995</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- 方向二 -->
-                        <div>
-                            <h3 class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
-                                <span class="w-1.5 h-5 bg-brand-500 rounded-full"></span> 多智能体系统控制基本理论
-                            </h3>
-                                 <div class="text-slate-700 leading-relaxed text-sm space-y-4">
-                        <p>拥有了系统性能分析做基础,我们进一步关注其调控问题，抽象成多智能体问题来说，即一般系统的控制协议设计问题。</p>
-                        <p>进一步又可以分成几个子问题，一、不同类型的控制问题如何设计协议。二、所设计的协议是否一定可以实现目标（总是可以求出可用的参数，而不是求出参数才可以用）。三是相比于其他协议有什么好处，我们开展了如下研究：</p>
-                         <p>提出了一致性、部分一致性、输出一致性的统一分析框架、提出了系统可一致性新的分析方法，与上述性能分析方法实现了配套，从使用信息的视角提出了多种新型控制协议。</p>      
-                            </div>
-                        <h4 class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
-                                <span class="w-1.5 h-5 bg-brand-500 rounded-full"></span> 具体工作
-                        </h4>
-                            <ul class="space-y-4 text-sm text-slate-600 leading-relaxed">
-                                <li class="pl-4 border-l-2 border-slate-200 hover:border-brand-400 transition">
-                                    [1] Chen Yangzhou, <strong>Zhao lanhao</strong>. Partial state consensus and output consensus in heterogeneous multi-agent systems. <em>J Syst Sci Complex</em> (2026).
-                                    <span class="inline-block mt-1 px-2 py-0.5 bg-blue-50 text-blue-700 rounded text-xs">SCI JCR Q1</span>
-                                </li>
-                                <li class="pl-4 border-l-2 border-slate-200 hover:border-brand-400 transition">
-                                    [2] Chen Yangzhou, <strong>Zhao lanhao</strong> et al. Consensus of heterogeneous multi-agent systems: linear transformation decentralized output feedback method. <em>Automatica, Major Revision</em>.
-                                </li>
-                                <li class="pl-4 border-l-2 border-slate-200 hover:border-brand-400 transition">
-                                    [3] Chen Yangzhou, <strong>Zhao lanhao</strong>. Consensus of heterogeneous multi agent systems: A method based on basic edge state feedback and overlapping decomposition.
-                                </li>
-                                <li class="pl-4 border-l-2 border-slate-200 hover:border-brand-400 transition">
-                                    [4] <strong>Zhao lanhao</strong>, Chen Yangzhou. Partial state consensus and output consensus in heterogeneous multi-agent systems: A method based on DETC.
-                                </li>
-                                <li class="pl-4 border-l-2 border-slate-200 hover:border-brand-400 transition">
-                                    [5] <strong>Zhao lanhao</strong>, Chen Yangzhou. Decentralized design of leader-following consensus protocols for heterogeneous multiagent systems with asymmetric weight matrix. <em>CISC.2024</em>
-                                </li>
-                                <li class="pl-4 border-l-2 border-slate-200 hover:border-brand-400 transition">
-                                    [6] Chen Yangzhou, <strong>Zhao lanhao</strong>. Decentralized design of consensus protocols with minimal communication links based on directed spanning tree. <em>CCDC 2023</em>.
-                                    <span class="inline-block mt-1 px-2 py-0.5 bg-orange-50 text-orange-700 rounded text-xs">CAA A类会议</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- 其它方向 -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div>
-                                <h3 class="text-md font-bold text-slate-800 mb-3 flex items-center gap-2">复杂场景下跟踪与编队</h3>
-                                           <div class="text-slate-700 leading-relaxed text-sm space-y-4">
-                        <p>进一步，我们将一致性问题讨论拓展到编队问题，考虑了多种复杂场景下的编队问题</p>
-                       </div>
-                        <h4 class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
-                                <span class="w-1.5 h-5 bg-brand-500 rounded-full"></span> 具体工作
-                        </h4>
-                                <ul class="text-sm text-slate-600 space-y-2 pl-3 border-l-2 border-slate-200">
-                                    <li>[1] Guangxin Guo, <strong>Lanhao Zhao</strong>Barrier function-based Preset-Time Bipartite Consensus for  Nonlinear Multi-agent Systems under Disturbance: A Time-Varying Function Approach<em>Submitted</em>.</li>
-                                    <li>[2] Guangxin Guo, <strong>Lanhao Zhao</strong>. Adaptive Super-Twisting Bipartite Consensus of Multiple Underwater Vehicles： A Barrier Function and Event-triggered Hybrid Approach <em>Submitted</em>.</li>
-                                    <li>[3] 赵涛涛，<strong>赵兰浩</strong> 基于分层博弈的二阶多智能体系统分组编队. <em>在审</em></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3 class="text-md font-bold text-slate-800 mb-3 flex items-center gap-2">机器学习与群体驱动</h3>
-                                                    <div class="text-slate-700 leading-relaxed text-sm space-y-4">
-                        <p>经过多年技术迭代和发展，目前，研究者们意识到有些问题已经非传统数理方法所能及，寻找新型的驱动策略、寻找辅助性的稳定性判定方法，寻找基于数据的操控方法，成为2025年之后的研究热点和宏大拼图的一部分，基于这个目的，开展下列讨论</p>
-                       <p>讨论了如何通过现代机器学习方法辅助寻找李雅普诺夫函数，和如何利用博弈等方法，实现对群体的引导性驱动，而非精准控制</p>
-                                                    </div>
-                        <h4 class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
-                                <span class="w-1.5 h-5 bg-brand-500 rounded-full"></span> 具体工作
-                        </h4>
-                                <ul class="text-sm text-slate-600 space-y-2 pl-3 border-l-2 border-slate-200">
-                                    <li>[1] <strong>Zhao lanhao</strong>. Machine Learning for Lyapunov Function Synthesis. <a href="#" class="text-brand-600 hover:underline">RG. DOI</a></li>
-                                    <li>[2] Taotao ZHAO... <strong>Lanhao ZHAO</strong>Low-Dimensional Broadcast Herdability of Stochastic Swarms in Risky Environments <em>Submitted</em>.</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3 class="text-md font-bold text-slate-800 mb-3 flex items-center gap-2">生物启发</h3>
-                                <p class="text-slate-600">遗憾的是，迄今为止最为精密的群体系统往往来自于自然界，包括人类社区，做群体分析与控制，不知道自然界的样子是十分危险的，而时时刻刻观察一个自然系统又并非容易的事情，因此，结合生物学研究，开发一个接近真实情况的仿真界面是必须的，这里我们基于近年来生物学研究的标志性工作，主导开发：<a href="https://qdu-zdh.github.io/fishschooling/" class="text-brand-600 hover:underline font-semibold" target="_blank">鱼群动力学模拟器</a>。为群体研究提供较为真实的工具。</p>
-                            </div>
-                            <div>
-                                <h3 class="text-md font-bold text-slate-800 mb-3 flex items-center gap-2">其他工作（练手记录）</h3>
-                                <ul class="text-sm text-slate-600 space-y-1 pl-3 border-l-2 border-slate-200">
-                                    <li>[1] 短波通信技术发展综述 (被引前10%)</li>
-                                    <li>[2] 具有视力保护功能的智能台灯设计</li>
-                                    <li>[3] 基于安全性优化的密码锁设计</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </section>
 
         </main>
@@ -615,7 +728,7 @@
                 activeButton.classList.add('bg-brand-50', 'text-brand-600', 'border-brand-500', 'font-semibold');
             }
             
-            // 5. 在移动端点击后，可以自动滚动到顶部（可选优化）
+            // 5. 在移动端点击后，可以自动滚动到顶部
             if(window.innerWidth < 1024) {
                  window.scrollTo({ top: 0, behavior: 'smooth' });
             }
