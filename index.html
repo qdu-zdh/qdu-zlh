@@ -602,7 +602,7 @@
                     
                     <div class="space-y-10">
                         
-                        <!-- 方向一 -->
+                  <!-- 方向一 -->
                         <div class="bg-white/80 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:border-brand-200 transition-all duration-500 overflow-hidden">
                             <h3 class="text-lg font-black text-slate-800 p-5 bg-slate-50/50 border-b border-slate-100/60 flex items-center gap-3">
                                 <span class="w-2 h-6 bg-brand-500 rounded-full shadow-sm shadow-brand-500/50"></span> 
@@ -613,13 +613,13 @@
                                 <div class="text-slate-600 leading-relaxed text-[15px] space-y-3 mb-8 bg-slate-50/50 p-5 rounded-xl border border-slate-100">
                                     <div class="zh">
                                         <p>对于群体系统，我们首先注意到的是其客观现象和性能，这一部分工作所从事的即性能分析方法的讨论和拓展。从调控的视角来看，我们所关心的性能在于其可控性和可观性，具体来说，特定的网络结构往往带来特定的性质，这些性质又进一步助力对系统性能的快速判断，等价划分即是此类。</p>
-                                        <p>等价划分所带来的不可控和不可观的性质，在复杂网络性能分析中起到了快速判断的作用，但之前的工作往往基于极其理想的网络条件所提出，无论是定义和相应的分析方法是否能够继续成立仍然是未知的。我们开展了如下研究：</p>
-                                        <p>分别讨论了时滞场景，异构场景、切换场景、矩阵权重场景、一般线性系统场景、结构可控性、强结构可控性等问题，提出了多种形式的等价划分的新定义，指出早期分析方法在判断复杂系统时需要考虑的一些假设，为基本图论工具在分析复杂的网络场景下的适配提供了系统性参考。</p>
+                                        <p>等价划分所带来的不可控和不可观的性质，在复杂网络性能分析中起到了快速判断的作用，但之前的工作往往基于极其理想的网络条件所提出，无论是定义和相应的分析方法是否能够继续成立仍然是未知的。为了实现从被动性能评估到主动多项式时间综合的跨越，我们开展了如下研究：</p>
+                                        <p>分别讨论了时滞场景、异构场景、切换场景、矩阵权重场景、一般线性系统场景、结构可控性、强结构可控性以及最优领航者选择等问题。我们提出了多种形式的等价划分的新定义（如层级距离划分 LDP），指出系统不可控的根源在于拓扑对称等价和维度特定隔离。通过设计多层Weisfeiler-Lehman颜色细化算法以及GWLS、SBM、PEM等对称性破缺算法，有效克服了求解最优领航者集合的NP-hard组合爆炸难题。这六个工作的系统性整合，为基本图论工具在复杂网络场景下的分析与逆向设计提供了全面参考。</p>
                                     </div>
                                     <div class="en">
                                         <p>For swarm systems, our primary focus is their objective phenomena and performance. This section discusses and expands upon performance analysis methods. From a regulatory perspective, we are concerned with controllability and observability. Specifically, certain network structures induce particular properties, which further facilitate rapid assessment of system performance (e.g., equitable partitions).</p>
-                                        <p>The uncontrollable and unobservable properties brought by equitable partitions act as quick diagnostics in complex network analysis. However, prior works often relied on highly idealized network conditions, leaving the validity of definitions and analysis methods under realistic settings unknown. We conducted the following research:</p>
-                                        <p>We explored scenarios including time delays, heterogeneity, switching topologies, matrix weights, general linear systems, structural controllability, and strong structural controllability. We proposed novel definitions of equitable partitions, highlighted necessary assumptions for early analysis methods, and provided a systematic reference for adapting basic graph-theoretic tools to complex network scenarios.</p>
+                                        <p>The uncontrollable and unobservable properties brought by equitable partitions act as quick diagnostics in complex network analysis. However, prior works often relied on highly idealized network conditions, leaving the validity of definitions and analysis methods under realistic settings unknown. To transition from passive performance boundary evaluation to active, polynomial-time leader synthesis[cite: 1], we conducted the following research:</p>
+                                        <p>We systematically explored scenarios including time delays, heterogeneity, switching topologies, matrix weights, general linear systems, structural controllability, strong structural controllability, and optimal leader selection[cite: 1, 2]. We proposed novel definitions of equitable partitions (e.g., Layer-specific Distance Partition)[cite: 2], and mathematically isolated uncontrollability roots to topological symmetry equivalence and dimension-specific isolation[cite: 1]. By introducing symmetry-breaking algorithms like multi-layer Weisfeiler-Lehman refinement, GWLS, SBM, and PEM, we successfully bypassed NP-hard combinatorial bottlenecks[cite: 1, 2]. The systematic integration of these six works provides a comprehensive reference for adapting basic graph-theoretic tools to both analyze and proactively design complex network scenarios.</p>
                                     </div>
                                 </div>
                                 <h4 class="text-[13px] font-black text-slate-400 uppercase tracking-widest mb-4 flex items-center gap-2">
@@ -640,6 +640,12 @@
                                     </li>
                                     <li class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-slate-300 before:rounded-full hover:before:bg-brand-500 hover:before:shadow-[0_0_8px_rgba(16,185,129,0.8)] transition-all">
                                         [4] <strong>Zhao lanhao</strong>, Ji Zhijian, Liu Yungang, Lin Chong. Controllability and observability of linear multi-agent systems over matrix-weighted signed networks. <a href="https://doi.org/10.48550/arXiv.2204.00995" class="text-brand-600 hover:text-brand-500 hover:underline transition-colors">arXiv.2204.00995</a>
+                                    </li>
+                                    <li class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-slate-300 before:rounded-full hover:before:bg-brand-500 hover:before:shadow-[0_0_8px_rgba(16,185,129,0.8)] transition-all">
+                                        [5] <strong>Zhao lanhao</strong>. On the Strong Structural Controllability of Matrix-Weighted Networks.
+                                    </li>
+                                    <li class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1.5 before:h-1.5 before:bg-slate-300 before:rounded-full hover:before:bg-brand-500 hover:before:shadow-[0_0_8px_rgba(16,185,129,0.8)] transition-all">
+                                        [6] <strong>Zhao lanhao</strong>. On Leader Selection for Strong Structural Controllability in Matrix-Weighted Networks.
                                     </li>
                                 </ul>
                             </div>
